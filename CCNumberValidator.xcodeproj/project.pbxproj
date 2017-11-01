@@ -145,6 +145,7 @@
 			buildPhases = (
 				F1E0B0E9AF5BB10EC1A4F65C /* [CP] Check Pods Manifest.lock */,
 				505F5EC61FAA29810093380D /* Sources */,
+				5003CB2F1FAA932100D07085 /* [SwiftLint] for Sources */,
 				505F5EC71FAA29810093380D /* Frameworks */,
 				505F5EC81FAA29810093380D /* Resources */,
 				6E75607924BC737AD76CB394 /* [CP] Embed Pods Frameworks */,
@@ -169,6 +170,7 @@
 				505F5EDC1FAA29810093380D /* Resources */,
 				7330F52A134CB7173ED55FA5 /* [CP] Embed Pods Frameworks */,
 				3BF6FA9981E726B17C672982 /* [CP] Copy Pods Resources */,
+				5003CB2E1FAA930900D07085 /* [SwiftLint] for Tests */,
 			);
 			buildRules = (
 			);
@@ -270,6 +272,34 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5003CB2E1FAA930900D07085 /* [SwiftLint] for Tests */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftLint] for Tests";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ “$CI” = “true” ]; then\necho “Skipping SwiftLint on CI”\nexit 0\nfi\n\ncd Tests; ${PODS_ROOT}/SwiftLint/swiftlint";
+		};
+		5003CB2F1FAA932100D07085 /* [SwiftLint] for Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftLint] for Sources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ “$CI” = “true” ]; then\necho “Skipping SwiftLint on CI”\nexit 0\nfi\n\ncd Sources; ${PODS_ROOT}/SwiftLint/swiftlint";
 		};
 		6E75607924BC737AD76CB394 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
