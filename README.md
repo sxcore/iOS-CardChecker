@@ -1,2 +1,2 @@
 # NGuru-iOS-CardChecker
-Test Assgigment
+Test Assigment for Recruitment Process

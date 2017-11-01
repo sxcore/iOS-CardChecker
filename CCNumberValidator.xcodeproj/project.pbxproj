@@ -13,6 +13,8 @@
 		505F5ED51FAA29810093380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED41FAA29810093380D /* Assets.xcassets */; };
 		505F5ED81FAA29810093380D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED61FAA29810093380D /* LaunchScreen.storyboard */; };
 		505F5EE31FAA29810093380D /* CCNumberValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5EE21FAA29810093380D /* CCNumberValidatorTests.swift */; };
+		79EF5EF8FEE92C274CA277DF /* Pods_CCNumberValidatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */; };
+		B4AA73628F3D36F6704E18DF /* Pods_CCNumberValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		196728729996C134754603A8 /* Pods-CCNumberValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator.release.xcconfig"; sourceTree = "<group>"; };
+		295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNumberValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		480E1B11812DCCE5E1B0CA93 /* Pods-CCNumberValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator.debug.xcconfig"; sourceTree = "<group>"; };
 		505F5ECA1FAA29810093380D /* CCNumberValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCNumberValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5ECD1FAA29810093380D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505F5ECF1FAA29810093380D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		505F5EDE1FAA29810093380D /* CCNumberValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCNumberValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5EE21FAA29810093380D /* CCNumberValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCNumberValidatorTests.swift; sourceTree = "<group>"; };
 		505F5EE41FAA29810093380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F185901AF96FDEDC02E2B8F /* Pods-CCNumberValidatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA51B36B339A7F20FA887107 /* Pods-CCNumberValidatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNumberValidatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4AA73628F3D36F6704E18DF /* Pods_CCNumberValidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79EF5EF8FEE92C274CA277DF /* Pods_CCNumberValidatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5003CB2D1FAA875C00D07085 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				505F5ED41FAA29810093380D /* Assets.xcassets */,
+				505F5ED91FAA29810093380D /* Info.plist */,
+				505F5ED61FAA29810093380D /* LaunchScreen.storyboard */,
+				505F5ED11FAA29810093380D /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		505F5EC11FAA29810093380D = {
 			isa = PBXGroup;
 			children = (
-				505F5ECC1FAA29810093380D /* CCNumberValidator */,
-				505F5EE11FAA29810093380D /* CCNumberValidatorTests */,
+				978D9A754D76FF00DCEA4C78 /* Frameworks */,
+				639F2B2443CB5190CE40648C /* Pods */,
 				505F5ECB1FAA29810093380D /* Products */,
+				5003CB2D1FAA875C00D07085 /* Resources */,
+				505F5ECC1FAA29810093380D /* Sources */,
+				505F5EE11FAA29810093380D /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,26 +98,42 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		505F5ECC1FAA29810093380D /* CCNumberValidator */ = {
+		505F5ECC1FAA29810093380D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				505F5ECD1FAA29810093380D /* AppDelegate.swift */,
-				505F5ED41FAA29810093380D /* Assets.xcassets */,
-				505F5ED91FAA29810093380D /* Info.plist */,
-				505F5ED61FAA29810093380D /* LaunchScreen.storyboard */,
-				505F5ED11FAA29810093380D /* Main.storyboard */,
 				505F5ECF1FAA29810093380D /* ViewController.swift */,
 			);
-			path = CCNumberValidator;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		505F5EE11FAA29810093380D /* CCNumberValidatorTests */ = {
+		505F5EE11FAA29810093380D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				505F5EE21FAA29810093380D /* CCNumberValidatorTests.swift */,
 				505F5EE41FAA29810093380D /* Info.plist */,
 			);
-			path = CCNumberValidatorTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		639F2B2443CB5190CE40648C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				480E1B11812DCCE5E1B0CA93 /* Pods-CCNumberValidator.debug.xcconfig */,
+				196728729996C134754603A8 /* Pods-CCNumberValidator.release.xcconfig */,
+				6F185901AF96FDEDC02E2B8F /* Pods-CCNumberValidatorTests.debug.xcconfig */,
+				AA51B36B339A7F20FA887107 /* Pods-CCNumberValidatorTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		978D9A754D76FF00DCEA4C78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */,
+				D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 505F5EE71FAA29810093380D /* Build configuration list for PBXNativeTarget "CCNumberValidator" */;
 			buildPhases = (
+				F1E0B0E9AF5BB10EC1A4F65C /* [CP] Check Pods Manifest.lock */,
 				505F5EC61FAA29810093380D /* Sources */,
 				505F5EC71FAA29810093380D /* Frameworks */,
 				505F5EC81FAA29810093380D /* Resources */,
+				6E75607924BC737AD76CB394 /* [CP] Embed Pods Frameworks */,
+				2752FDD7F79B8D946C7039BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 505F5EEA1FAA29810093380D /* Build configuration list for PBXNativeTarget "CCNumberValidatorTests" */;
 			buildPhases = (
+				80FE0A61D6D7A54F7A92AC59 /* [CP] Check Pods Manifest.lock */,
 				505F5EDA1FAA29810093380D /* Sources */,
 				505F5EDB1FAA29810093380D /* Frameworks */,
 				505F5EDC1FAA29810093380D /* Resources */,
+				7330F52A134CB7173ED55FA5 /* [CP] Embed Pods Frameworks */,
+				3BF6FA9981E726B17C672982 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +239,123 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2752FDD7F79B8D946C7039BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BF6FA9981E726B17C672982 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E75607924BC737AD76CB394 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7330F52A134CB7173ED55FA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80FE0A61D6D7A54F7A92AC59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCNumberValidatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E0B0E9AF5BB10EC1A4F65C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCNumberValidator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		505F5EC61FAA29810093380D /* Sources */ = {
@@ -353,6 +516,7 @@
 		};
 		505F5EE81FAA29810093380D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 480E1B11812DCCE5E1B0CA93 /* Pods-CCNumberValidator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,6 +532,7 @@
 		};
 		505F5EE91FAA29810093380D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196728729996C134754603A8 /* Pods-CCNumberValidator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,6 +548,7 @@
 		};
 		505F5EEB1FAA29810093380D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F185901AF96FDEDC02E2B8F /* Pods-CCNumberValidatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -400,6 +566,7 @@
 		};
 		505F5EEC1FAA29810093380D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA51B36B339A7F20FA887107 /* Pods-CCNumberValidatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
