@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         let mainViewController = UIViewController()
-        mainViewController.view.backgroundColor = UIColor.red
 
         guard let window = window else {
             fatalError("Window was handled unexpectedly in AppDelegate")

@@ -1,12 +1,11 @@
-import UIKit
 import SnapKit
+import UIKit
 
 class MainView: UIView {
 
-    init(){
+    init() {
         super.init(frame: .zero)
     }
-
 
     // MARK: - Required initializer
 

@@ -26,6 +26,10 @@ class AppDelegateSpec: QuickSpec {
                 it("should return true") {
                     expect(launchReturnValue).to(beTrue())
                 }
+
+                it("should have set Main View Controller as Root View Controller") {
+                    expect(appDelegate.window?.rootViewController).toNot(beNil())
+                }
             }
         }
     }
