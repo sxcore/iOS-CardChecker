@@ -577,7 +577,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Z84TYU2C;
-				INFOPLIST_FILE = CCNumberValidatorTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.M-Code.CCNumberValidatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -595,7 +595,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Z84TYU2C;
-				INFOPLIST_FILE = CCNumberValidatorTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.M-Code.CCNumberValidatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
