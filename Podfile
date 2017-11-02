@@ -1,4 +1,5 @@
 platform :ios, '9.0'
+inhibit_all_warnings!
 
 def di_pods
   pod 'Swinject', '~> 2.1.1'
