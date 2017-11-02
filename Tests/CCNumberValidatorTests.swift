@@ -1,11 +1,3 @@
-//
-//  CCNumberValidatorTests.swift
-//  CCNumberValidatorTests
-//
-//  Created by Michał Czerniakowski on 01.11.2017.
-//  Copyright © 2017 M-Code. All rights reserved.
-//
-
 import XCTest
 @testable import CCNumberValidator
 
