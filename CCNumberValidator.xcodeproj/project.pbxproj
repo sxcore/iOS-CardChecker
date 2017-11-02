@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5003CB311FAAB34100D07085 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5003CB301FAAB34000D07085 /* APIKey.plist */; };
 		505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECD1FAA29810093380D /* AppDelegate.swift */; };
 		505F5ED01FAA29810093380D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECF1FAA29810093380D /* MainViewController.swift */; };
 		505F5ED51FAA29810093380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED41FAA29810093380D /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		196728729996C134754603A8 /* Pods-CCNumberValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator.release.xcconfig"; sourceTree = "<group>"; };
 		295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNumberValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		480E1B11812DCCE5E1B0CA93 /* Pods-CCNumberValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator.debug.xcconfig"; sourceTree = "<group>"; };
+		5003CB301FAAB34000D07085 /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		505F5ECA1FAA29810093380D /* CCNumberValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCNumberValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5ECD1FAA29810093380D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505F5ECF1FAA29810093380D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		5003CB2D1FAA875C00D07085 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5003CB301FAAB34000D07085 /* APIKey.plist */,
 				505F5ED41FAA29810093380D /* Assets.xcassets */,
 				505F5ED91FAA29810093380D /* Info.plist */,
 				505F5ED61FAA29810093380D /* LaunchScreen.storyboard */,
@@ -224,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5003CB311FAAB34100D07085 /* APIKey.plist in Resources */,
 				505F5ED81FAA29810093380D /* LaunchScreen.storyboard in Resources */,
 				505F5ED51FAA29810093380D /* Assets.xcassets in Resources */,
 			);
