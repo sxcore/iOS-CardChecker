@@ -11,6 +11,7 @@
 		5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */; };
 		5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB371FAABF0400D07085 /* MainAssembly.swift */; };
 		5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */; };
+		5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB3B1FAAC2AB00D07085 /* MainView.swift */; };
 		505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECD1FAA29810093380D /* AppDelegate.swift */; };
 		505F5ED01FAA29810093380D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECF1FAA29810093380D /* MainViewController.swift */; };
 		505F5ED51FAA29810093380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED41FAA29810093380D /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembler+Assemblies.swift"; sourceTree = "<group>"; };
 		5003CB371FAABF0400D07085 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
+		5003CB3B1FAAC2AB00D07085 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = MainView.swift; sourceTree = "<group>"; };
 		505F5ECA1FAA29810093380D /* CCNumberValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCNumberValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5ECD1FAA29810093380D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505F5ECF1FAA29810093380D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -89,13 +91,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		5003CB331FAABE0E00D07085 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		5003CB341FAABE7400D07085 /* Dependecy Injection */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +98,14 @@
 				5003CB371FAABF0400D07085 /* MainAssembly.swift */,
 			);
 			path = "Dependecy Injection";
+			sourceTree = "<group>";
+		};
+		5003CB3D1FAAC38900D07085 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5003CB3B1FAAC2AB00D07085 /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		505F5EC11FAA29810093380D = {
@@ -131,7 +134,7 @@
 			children = (
 				5003CB341FAABE7400D07085 /* Dependecy Injection */,
 				5003CB321FAABE0600D07085 /* ViewControllers */,
-				5003CB331FAABE0E00D07085 /* Views */,
+				5003CB3D1FAAC38900D07085 /* Views */,
 				505F5ECD1FAA29810093380D /* AppDelegate.swift */,
 			);
 			path = Sources;
@@ -426,6 +429,7 @@
 				5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */,
 				505F5ED01FAA29810093380D /* MainViewController.swift in Sources */,
 				5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */,
+				5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */,
 				505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
