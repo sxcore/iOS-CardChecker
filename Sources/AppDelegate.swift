@@ -1,9 +1,16 @@
+import Swinject
+import SwinjectAutoregistration
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    private let assembler: Assembler
     var window: UIWindow?
+
+    override init() {
+        self.assembler = Assembler.defaultAssembler
+    }
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
