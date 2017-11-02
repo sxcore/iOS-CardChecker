@@ -12,10 +12,12 @@
 		5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB371FAABF0400D07085 /* MainAssembly.swift */; };
 		5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */; };
 		5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB3B1FAAC2AB00D07085 /* MainView.swift */; };
+		50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50474DD81FAB61BD00906551 /* ForceCast.swift */; };
 		505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECD1FAA29810093380D /* AppDelegate.swift */; };
 		505F5ED01FAA29810093380D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECF1FAA29810093380D /* MainViewController.swift */; };
 		505F5ED51FAA29810093380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED41FAA29810093380D /* Assets.xcassets */; };
 		505F5ED81FAA29810093380D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED61FAA29810093380D /* LaunchScreen.storyboard */; };
+		50F616921FAB68860093D23E /* ForceCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50474DDB1FAB66ED00906551 /* ForceCastTests.swift */; };
 		79EF5EF8FEE92C274CA277DF /* Pods_CCNumberValidatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */; };
 		B4AA73628F3D36F6704E18DF /* Pods_CCNumberValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */; };
 /* End PBXBuildFile section */
@@ -38,7 +40,9 @@
 		5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembler+Assemblies.swift"; sourceTree = "<group>"; };
 		5003CB371FAABF0400D07085 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
-		5003CB3B1FAAC2AB00D07085 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5003CB3B1FAAC2AB00D07085 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		50474DD81FAB61BD00906551 /* ForceCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceCast.swift; sourceTree = "<group>"; };
+		50474DDB1FAB66ED00906551 /* ForceCastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceCastTests.swift; sourceTree = "<group>"; };
 		505F5ECA1FAA29810093380D /* CCNumberValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCNumberValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5ECD1FAA29810093380D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505F5ECF1FAA29810093380D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		50474DD71FAB61A500906551 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50474DD81FAB61BD00906551 /* ForceCast.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50474DDA1FAB66DA00906551 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50474DDB1FAB66ED00906551 /* ForceCastTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		505F5EC11FAA29810093380D = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5003CB341FAABE7400D07085 /* Dependecy Injection */,
+				50474DD71FAB61A500906551 /* Extensions */,
 				5003CB321FAABE0600D07085 /* ViewControllers */,
 				5003CB3D1FAAC38900D07085 /* Views */,
 				505F5ECD1FAA29810093380D /* AppDelegate.swift */,
@@ -143,6 +164,7 @@
 		505F5EE11FAA29810093380D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				50474DDA1FAB66DA00906551 /* Extensions */,
 				5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */,
 				505F5EE41FAA29810093380D /* Info.plist */,
 			);
@@ -430,6 +452,7 @@
 				505F5ED01FAA29810093380D /* MainViewController.swift in Sources */,
 				5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */,
 				5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */,
+				50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */,
 				505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F616921FAB68860093D23E /* ForceCastTests.swift in Sources */,
 				5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

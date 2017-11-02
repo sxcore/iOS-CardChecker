@@ -14,6 +14,16 @@ class MainViewController: UIViewController {
 
     }
 
+    override func loadView() {
+        view = MainView()
+    }
+
+     var mainView: MainView { return forceCast(view) }
+
+    // MARK: - ControllerProviding
+
+    var controller: UIViewController { return self }
+
     // MARK: - Required initializer
 
     required init?(coder aDecoder: NSCoder) {

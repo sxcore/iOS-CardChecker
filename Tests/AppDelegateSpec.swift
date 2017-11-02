@@ -27,8 +27,12 @@ class AppDelegateSpec: QuickSpec {
                     expect(launchReturnValue).to(beTrue())
                 }
 
-                it("should have set Main View Controller as Root View Controller") {
+                it("RootViewController should NOT be nil") {
                     expect(appDelegate.window?.rootViewController).toNot(beNil())
+                }
+
+                it("should have set Main View Controller as Root View Controller") {
+                    expect(appDelegate.window?.rootViewController).to(beAnInstanceOf(MainViewController.self))
                 }
             }
         }
