@@ -17,6 +17,7 @@
 		505F5ED01FAA29810093380D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECF1FAA29810093380D /* MainViewController.swift */; };
 		505F5ED51FAA29810093380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED41FAA29810093380D /* Assets.xcassets */; };
 		505F5ED81FAA29810093380D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED61FAA29810093380D /* LaunchScreen.storyboard */; };
+		50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */; };
 		50F616921FAB68860093D23E /* ForceCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50474DDB1FAB66ED00906551 /* ForceCastTests.swift */; };
 		79EF5EF8FEE92C274CA277DF /* Pods_CCNumberValidatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */; };
 		B4AA73628F3D36F6704E18DF /* Pods_CCNumberValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */; };
@@ -51,6 +52,7 @@
 		505F5ED91FAA29810093380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505F5EDE1FAA29810093380D /* CCNumberValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCNumberValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5EE41FAA29810093380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardControlView.swift; sourceTree = "<group>"; };
 		6F185901AF96FDEDC02E2B8F /* Pods-CCNumberValidatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA51B36B339A7F20FA887107 /* Pods-CCNumberValidatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNumberValidatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				5003CB3B1FAAC2AB00D07085 /* MainView.swift */,
+				50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */,
 				505F5ED01FAA29810093380D /* MainViewController.swift in Sources */,
 				5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */,
+				50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */,
 				5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */,
 				50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */,
 				505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */,
