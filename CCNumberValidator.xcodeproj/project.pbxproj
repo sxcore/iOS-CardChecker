@@ -10,11 +10,11 @@
 		5003CB311FAAB34100D07085 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5003CB301FAAB34000D07085 /* APIKey.plist */; };
 		5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */; };
 		5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB371FAABF0400D07085 /* MainAssembly.swift */; };
+		5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */; };
 		505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECD1FAA29810093380D /* AppDelegate.swift */; };
 		505F5ED01FAA29810093380D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECF1FAA29810093380D /* MainViewController.swift */; };
 		505F5ED51FAA29810093380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED41FAA29810093380D /* Assets.xcassets */; };
 		505F5ED81FAA29810093380D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED61FAA29810093380D /* LaunchScreen.storyboard */; };
-		505F5EE31FAA29810093380D /* CCNumberValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5EE21FAA29810093380D /* CCNumberValidatorTests.swift */; };
 		79EF5EF8FEE92C274CA277DF /* Pods_CCNumberValidatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */; };
 		B4AA73628F3D36F6704E18DF /* Pods_CCNumberValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +36,7 @@
 		5003CB301FAAB34000D07085 /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembler+Assemblies.swift"; sourceTree = "<group>"; };
 		5003CB371FAABF0400D07085 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		505F5ECA1FAA29810093380D /* CCNumberValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCNumberValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5ECD1FAA29810093380D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505F5ECF1FAA29810093380D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		505F5ED71FAA29810093380D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505F5ED91FAA29810093380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505F5EDE1FAA29810093380D /* CCNumberValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCNumberValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		505F5EE21FAA29810093380D /* CCNumberValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCNumberValidatorTests.swift; sourceTree = "<group>"; };
 		505F5EE41FAA29810093380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F185901AF96FDEDC02E2B8F /* Pods-CCNumberValidatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA51B36B339A7F20FA887107 /* Pods-CCNumberValidatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		505F5EE11FAA29810093380D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				505F5EE21FAA29810093380D /* CCNumberValidatorTests.swift */,
+				5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */,
 				505F5EE41FAA29810093380D /* Info.plist */,
 			);
 			path = Tests;
@@ -228,6 +228,7 @@
 					};
 					505F5EDD1FAA29810093380D = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 505F5EC91FAA29810093380D;
 					};
@@ -433,7 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505F5EE31FAA29810093380D /* CCNumberValidatorTests.swift in Sources */,
+				5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,12 +612,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Z84TYU2C;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.M-Code.CCNumberValidatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCNumberValidator.app/CCNumberValidator";
@@ -629,6 +632,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Z84TYU2C;
 				INFOPLIST_FILE = Tests/Info.plist;
