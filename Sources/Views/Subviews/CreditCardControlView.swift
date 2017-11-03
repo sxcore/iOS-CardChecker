@@ -3,13 +3,14 @@ import UIKit
 
 class CreditCardControlView: UIView {
 
-    let creditCardNumberTextField: UITextField = Factory.aCVCNumberTextField()
+    let creditCardNumberTextField: UITextField = Factory.creditCardNumberTextField()
     let dateNumberTextField: UITextField = Factory.dateNumberTextField()
     let aCVCNumberTextField: UITextField = Factory.aCVCNumberTextField()
 
     init() {
         super.init(frame: .zero)
 
+        backgroundColor = UIColor.white
         addSubviews()
         configureAutolayout()
     }
@@ -22,22 +23,22 @@ class CreditCardControlView: UIView {
 
     private func configureAutolayout() {
         creditCardNumberTextField.snp.makeConstraints { make -> Void in
-            make.top.equalTo(self)
-            make.bottom.equalTo(self)
-            make.left.equalTo(self)
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.left.equalToSuperview().offset(5)
         }
 
         dateNumberTextField.snp.makeConstraints { make -> Void in
-            make.top.equalTo(self)
-            make.bottom.equalTo(self)
-            make.left.equalTo(creditCardNumberTextField)
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.left.greaterThanOrEqualTo(creditCardNumberTextField.snp.right).offset(10)
         }
 
         aCVCNumberTextField.snp.makeConstraints { make -> Void in
-            make.top.equalTo(self)
-            make.bottom.equalTo(self)
-            make.left.equalTo(dateNumberTextField)
-            make.right.equalTo(self)
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.left.greaterThanOrEqualTo(dateNumberTextField.snp.right).offset(10)
+            make.right.equalToSuperview().offset(5)
         }
     }
 

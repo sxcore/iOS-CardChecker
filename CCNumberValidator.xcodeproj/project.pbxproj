@@ -20,6 +20,7 @@
 		50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */; };
 		50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C051FABBAA800640B34 /* MainView+Factory.swift */; };
 		50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */; };
+		50EA7C0A1FABC87A00640B34 /* ValidationIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C091FABC87A00640B34 /* ValidationIndicatorView.swift */; };
 		50F616921FAB68860093D23E /* ForceCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50474DDB1FAB66ED00906551 /* ForceCastTests.swift */; };
 		79EF5EF8FEE92C274CA277DF /* Pods_CCNumberValidatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */; };
 		B4AA73628F3D36F6704E18DF /* Pods_CCNumberValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */; };
@@ -57,6 +58,7 @@
 		50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardControlView.swift; sourceTree = "<group>"; };
 		50EA7C051FABBAA800640B34 /* MainView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Factory.swift"; sourceTree = "<group>"; };
 		50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreditCardControlView+Factory.swift"; sourceTree = "<group>"; };
+		50EA7C091FABC87A00640B34 /* ValidationIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationIndicatorView.swift; sourceTree = "<group>"; };
 		6F185901AF96FDEDC02E2B8F /* Pods-CCNumberValidatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA51B36B339A7F20FA887107 /* Pods-CCNumberValidatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNumberValidatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,8 +115,7 @@
 		5003CB3D1FAAC38900D07085 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */,
-				50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */,
+				50EA7C0B1FAC05D300640B34 /* Subviews */,
 				50EA7C051FABBAA800640B34 /* MainView+Factory.swift */,
 				5003CB3B1FAAC2AB00D07085 /* MainView.swift */,
 			);
@@ -178,6 +179,16 @@
 				505F5EE41FAA29810093380D /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		50EA7C0B1FAC05D300640B34 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */,
+				50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */,
+				50EA7C091FABC87A00640B34 /* ValidationIndicatorView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		639F2B2443CB5190CE40648C /* Pods */ = {
@@ -460,6 +471,7 @@
 				5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */,
 				505F5ED01FAA29810093380D /* MainViewController.swift in Sources */,
 				50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */,
+				50EA7C0A1FABC87A00640B34 /* ValidationIndicatorView.swift in Sources */,
 				5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */,
 				50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */,
 				50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */,
