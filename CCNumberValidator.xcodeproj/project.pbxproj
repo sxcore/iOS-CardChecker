@@ -17,6 +17,8 @@
 		505F5ED01FAA29810093380D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECF1FAA29810093380D /* MainViewController.swift */; };
 		505F5ED51FAA29810093380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED41FAA29810093380D /* Assets.xcassets */; };
 		505F5ED81FAA29810093380D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED61FAA29810093380D /* LaunchScreen.storyboard */; };
+		50B5A79E1FAC290C00013434 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A79D1FAC290C00013434 /* CustomButton.swift */; };
+		50B5A7A01FAC2B4900013434 /* UIImage+FromColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */; };
 		50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */; };
 		50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C051FABBAA800640B34 /* MainView+Factory.swift */; };
 		50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */; };
@@ -55,6 +57,8 @@
 		505F5ED91FAA29810093380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505F5EDE1FAA29810093380D /* CCNumberValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCNumberValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5EE41FAA29810093380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B5A79D1FAC290C00013434 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FromColor.swift"; sourceTree = "<group>"; };
 		50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardControlView.swift; sourceTree = "<group>"; };
 		50EA7C051FABBAA800640B34 /* MainView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Factory.swift"; sourceTree = "<group>"; };
 		50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreditCardControlView+Factory.swift"; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				50474DD81FAB61BD00906551 /* ForceCast.swift */,
+				50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			children = (
 				50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */,
 				50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */,
+				50B5A79D1FAC290C00013434 /* CustomButton.swift */,
 				50EA7C091FABC87A00640B34 /* ValidationIndicatorView.swift */,
 			);
 			path = Subviews;
@@ -477,7 +483,9 @@
 				5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */,
 				50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */,
 				50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */,
+				50B5A79E1FAC290C00013434 /* CustomButton.swift in Sources */,
 				5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */,
+				50B5A7A01FAC2B4900013434 /* UIImage+FromColor.swift in Sources */,
 				50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */,
 				505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */,
 			);

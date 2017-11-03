@@ -9,7 +9,7 @@ extension MainView {
             stackView.alignment = .center
             stackView.axis = .vertical
             stackView.distribution = .equalSpacing
-            stackView.spacing = 3.0
+            stackView.spacing = 20.0
             return stackView
         }
 
@@ -24,17 +24,17 @@ extension MainView {
             return creditCardControlView
         }
 
-        static func generateButton() -> UIButton {
-            let generateButton = UIButton()
-            generateButton.titleLabel?.text = "Generate Random Credit Card Code"
-            generateButton.backgroundColor = UIColor.yellow
+        static func generateButton() -> CustomButton {
+            let generateButton = CustomButton()
+            generateButton.setTitle("Generate Random Credit Card Code", for: .normal)
+            generateButton.backgroundColor = #colorLiteral(red: 1, green: 0.4932718873, blue: 0.4739984274, alpha: 1)
             return generateButton
         }
 
-        static func validateButton() -> UIButton {
-            let validateButton = UIButton()
-            validateButton.titleLabel?.text = "Validete Given Credit Card Code"
-            validateButton.backgroundColor = UIColor.red
+        static func validateButton() -> CustomButton {
+            let validateButton = CustomButton()
+            validateButton.setTitle("Validate Given Credit Card Code", for: .normal)
+            validateButton.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
             return validateButton
         }
 

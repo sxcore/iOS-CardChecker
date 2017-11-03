@@ -30,22 +30,27 @@ public class MainView: UIView {
 
     private func configureAutolayout() {
         stackView.snp.makeConstraints { make -> Void in
-            make.height.equalTo(400)
             make.left.right.centerY.equalToSuperview()
         }
 
         validationIndicatorView.snp.makeConstraints { make -> Void in
-            make.height.equalTo(40)
+            make.height.equalTo(100)
+            make.left.equalToSuperview().offset(5)
+            make.right.equalToSuperview().offset(-5)
         }
         creditCardControlView.snp.makeConstraints { make -> Void in
             make.height.equalTo(40)
             make.centerX.equalToSuperview()
         }
         generateButton.snp.makeConstraints { make -> Void in
-            make.height.equalTo(40)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
+            make.height.equalTo(60)
         }
         validateButton.snp.makeConstraints { make -> Void in
-            make.height.equalTo(40)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
+            make.height.equalTo(60)
         }
 
     }
