@@ -15,6 +15,7 @@ extension MainView {
 
         static func validationIndicatorView() -> ValidationIndicatorView {
             let validationIndicatorView = ValidationIndicatorView()
+            validationIndicatorView.backgroundColor = UIColor.green
             return validationIndicatorView
         }
 
@@ -26,12 +27,14 @@ extension MainView {
         static func generateButton() -> UIButton {
             let generateButton = UIButton()
             generateButton.titleLabel?.text = "Generate Random Credit Card Code"
+            generateButton.backgroundColor = UIColor.yellow
             return generateButton
         }
 
         static func validateButton() -> UIButton {
             let validateButton = UIButton()
             validateButton.titleLabel?.text = "Validete Given Credit Card Code"
+            validateButton.backgroundColor = UIColor.red
             return validateButton
         }
 

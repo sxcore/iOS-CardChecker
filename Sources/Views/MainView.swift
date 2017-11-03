@@ -39,7 +39,7 @@ public class MainView: UIView {
         }
         creditCardControlView.snp.makeConstraints { make -> Void in
             make.height.equalTo(40)
-            make.width.equalToSuperview()
+            make.centerX.equalToSuperview()
         }
         generateButton.snp.makeConstraints { make -> Void in
             make.height.equalTo(40)

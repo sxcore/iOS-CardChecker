@@ -23,22 +23,22 @@ class CreditCardControlView: UIView {
 
     private func configureAutolayout() {
         creditCardNumberTextField.snp.makeConstraints { make -> Void in
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.left.equalToSuperview().offset(10)
+            make.top.bottom.equalToSuperview()
+            make.left.equalToSuperview().offset(5)
+            make.width.equalTo(175)
         }
 
         dateNumberTextField.snp.makeConstraints { make -> Void in
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.left.equalTo(creditCardNumberTextField.snp.right).offset(5)
-            make.right.greaterThanOrEqualTo(aCVCNumberTextField.snp.left).offset(-10)
+            make.top.bottom.equalToSuperview()
+            make.left.greaterThanOrEqualTo(creditCardNumberTextField.snp.right).offset(20)
+            make.right.equalTo(aCVCNumberTextField.snp.left).offset(-20)
+            make.width.equalTo(55)
         }
 
         aCVCNumberTextField.snp.makeConstraints { make -> Void in
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.right.equalToSuperview().offset(-10)
+            make.top.bottom.equalToSuperview()
+            make.right.equalToSuperview().offset(-5)
+            make.width.equalTo(40)
         }
     }
 
