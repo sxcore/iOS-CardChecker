@@ -8,11 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		5003CB311FAAB34100D07085 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5003CB301FAAB34000D07085 /* APIKey.plist */; };
+		5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */; };
+		5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB371FAABF0400D07085 /* MainAssembly.swift */; };
+		5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */; };
+		5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB3B1FAAC2AB00D07085 /* MainView.swift */; };
+		50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50474DD81FAB61BD00906551 /* ForceCast.swift */; };
 		505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECD1FAA29810093380D /* AppDelegate.swift */; };
 		505F5ED01FAA29810093380D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECF1FAA29810093380D /* MainViewController.swift */; };
 		505F5ED51FAA29810093380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED41FAA29810093380D /* Assets.xcassets */; };
 		505F5ED81FAA29810093380D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED61FAA29810093380D /* LaunchScreen.storyboard */; };
-		505F5EE31FAA29810093380D /* CCNumberValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5EE21FAA29810093380D /* CCNumberValidatorTests.swift */; };
+		50B5A79E1FAC290C00013434 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A79D1FAC290C00013434 /* CustomButton.swift */; };
+		50B5A7A01FAC2B4900013434 /* UIImage+FromColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */; };
+		50B5A7A21FAC2FB200013434 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A7A11FAC2FB200013434 /* BackgroundView.swift */; };
+		50B5A7A41FAC365400013434 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B5A7A31FAC365400013434 /* Images.xcassets */; };
+		50B5A7A81FAC3D2D00013434 /* ValidationIndicatorViewTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A7A71FAC3D2D00013434 /* ValidationIndicatorViewTypeExtension.swift */; };
+		50B5A7AD1FAC418D00013434 /* ValidationIndicatorView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A7AC1FAC418D00013434 /* ValidationIndicatorView+Factory.swift */; };
+		50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */; };
+		50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C051FABBAA800640B34 /* MainView+Factory.swift */; };
+		50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */; };
+		50EA7C0A1FABC87A00640B34 /* ValidationIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C091FABC87A00640B34 /* ValidationIndicatorView.swift */; };
+		50F616921FAB68860093D23E /* ForceCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50474DDB1FAB66ED00906551 /* ForceCastTests.swift */; };
 		79EF5EF8FEE92C274CA277DF /* Pods_CCNumberValidatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */; };
 		B4AA73628F3D36F6704E18DF /* Pods_CCNumberValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +47,12 @@
 		295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNumberValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		480E1B11812DCCE5E1B0CA93 /* Pods-CCNumberValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator.debug.xcconfig"; sourceTree = "<group>"; };
 		5003CB301FAAB34000D07085 /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
+		5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembler+Assemblies.swift"; sourceTree = "<group>"; };
+		5003CB371FAABF0400D07085 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
+		5003CB3B1FAAC2AB00D07085 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		50474DD81FAB61BD00906551 /* ForceCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceCast.swift; sourceTree = "<group>"; };
+		50474DDB1FAB66ED00906551 /* ForceCastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceCastTests.swift; sourceTree = "<group>"; };
 		505F5ECA1FAA29810093380D /* CCNumberValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCNumberValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5ECD1FAA29810093380D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505F5ECF1FAA29810093380D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -39,8 +60,17 @@
 		505F5ED71FAA29810093380D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505F5ED91FAA29810093380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505F5EDE1FAA29810093380D /* CCNumberValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCNumberValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		505F5EE21FAA29810093380D /* CCNumberValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCNumberValidatorTests.swift; sourceTree = "<group>"; };
 		505F5EE41FAA29810093380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B5A79D1FAC290C00013434 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FromColor.swift"; sourceTree = "<group>"; };
+		50B5A7A11FAC2FB200013434 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		50B5A7A31FAC365400013434 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		50B5A7A71FAC3D2D00013434 /* ValidationIndicatorViewTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationIndicatorViewTypeExtension.swift; sourceTree = "<group>"; };
+		50B5A7AC1FAC418D00013434 /* ValidationIndicatorView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ValidationIndicatorView+Factory.swift"; sourceTree = "<group>"; };
+		50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardControlView.swift; sourceTree = "<group>"; };
+		50EA7C051FABBAA800640B34 /* MainView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Factory.swift"; sourceTree = "<group>"; };
+		50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreditCardControlView+Factory.swift"; sourceTree = "<group>"; };
+		50EA7C091FABC87A00640B34 /* ValidationIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationIndicatorView.swift; sourceTree = "<group>"; };
 		6F185901AF96FDEDC02E2B8F /* Pods-CCNumberValidatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA51B36B339A7F20FA887107 /* Pods-CCNumberValidatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		D223C191179DDCF8FFD07CA2 /* Pods_CCNumberValidatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNumberValidatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,10 +101,56 @@
 			children = (
 				5003CB301FAAB34000D07085 /* APIKey.plist */,
 				505F5ED41FAA29810093380D /* Assets.xcassets */,
+				50B5A7A31FAC365400013434 /* Images.xcassets */,
 				505F5ED91FAA29810093380D /* Info.plist */,
 				505F5ED61FAA29810093380D /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5003CB321FAABE0600D07085 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				505F5ECF1FAA29810093380D /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5003CB341FAABE7400D07085 /* Dependecy Injection */ = {
+			isa = PBXGroup;
+			children = (
+				5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */,
+				5003CB371FAABF0400D07085 /* MainAssembly.swift */,
+			);
+			path = "Dependecy Injection";
+			sourceTree = "<group>";
+		};
+		5003CB3D1FAAC38900D07085 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50EA7C0B1FAC05D300640B34 /* Subviews */,
+				50B5A7A11FAC2FB200013434 /* BackgroundView.swift */,
+				50EA7C051FABBAA800640B34 /* MainView+Factory.swift */,
+				5003CB3B1FAAC2AB00D07085 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50474DD71FAB61A500906551 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50474DD81FAB61BD00906551 /* ForceCast.swift */,
+				50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50474DDA1FAB66DA00906551 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50474DDB1FAB66ED00906551 /* ForceCastTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		505F5EC11FAA29810093380D = {
@@ -101,8 +177,11 @@
 		505F5ECC1FAA29810093380D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				5003CB341FAABE7400D07085 /* Dependecy Injection */,
+				50474DD71FAB61A500906551 /* Extensions */,
+				5003CB321FAABE0600D07085 /* ViewControllers */,
+				5003CB3D1FAAC38900D07085 /* Views */,
 				505F5ECD1FAA29810093380D /* AppDelegate.swift */,
-				505F5ECF1FAA29810093380D /* MainViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -110,10 +189,40 @@
 		505F5EE11FAA29810093380D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				505F5EE21FAA29810093380D /* CCNumberValidatorTests.swift */,
+				50474DDA1FAB66DA00906551 /* Extensions */,
+				5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */,
 				505F5EE41FAA29810093380D /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		50B5A7AA1FAC3F7400013434 /* ValidationIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				50B5A7AC1FAC418D00013434 /* ValidationIndicatorView+Factory.swift */,
+				50EA7C091FABC87A00640B34 /* ValidationIndicatorView.swift */,
+				50B5A7A71FAC3D2D00013434 /* ValidationIndicatorViewTypeExtension.swift */,
+			);
+			path = ValidationIndicator;
+			sourceTree = "<group>";
+		};
+		50B5A7AB1FAC3F8800013434 /* CreditCardControl */ = {
+			isa = PBXGroup;
+			children = (
+				50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */,
+				50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */,
+			);
+			path = CreditCardControl;
+			sourceTree = "<group>";
+		};
+		50EA7C0B1FAC05D300640B34 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				50B5A7AB1FAC3F8800013434 /* CreditCardControl */,
+				50B5A7AA1FAC3F7400013434 /* ValidationIndicator */,
+				50B5A79D1FAC290C00013434 /* CustomButton.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		639F2B2443CB5190CE40648C /* Pods */ = {
@@ -198,6 +307,7 @@
 					};
 					505F5EDD1FAA29810093380D = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 505F5EC91FAA29810093380D;
 					};
@@ -228,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5003CB311FAAB34100D07085 /* APIKey.plist in Resources */,
+				50B5A7A41FAC365400013434 /* Images.xcassets in Resources */,
 				505F5ED81FAA29810093380D /* LaunchScreen.storyboard in Resources */,
 				505F5ED51FAA29810093380D /* Assets.xcassets in Resources */,
 			);
@@ -308,14 +419,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-11/iOS/RevealServer.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
@@ -392,7 +509,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */,
+				50B5A7AD1FAC418D00013434 /* ValidationIndicatorView+Factory.swift in Sources */,
 				505F5ED01FAA29810093380D /* MainViewController.swift in Sources */,
+				50B5A7A21FAC2FB200013434 /* BackgroundView.swift in Sources */,
+				50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */,
+				50EA7C0A1FABC87A00640B34 /* ValidationIndicatorView.swift in Sources */,
+				5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */,
+				50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */,
+				50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */,
+				50B5A79E1FAC290C00013434 /* CustomButton.swift in Sources */,
+				5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */,
+				50B5A7A01FAC2B4900013434 /* UIImage+FromColor.swift in Sources */,
+				50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */,
+				50B5A7A81FAC3D2D00013434 /* ValidationIndicatorViewTypeExtension.swift in Sources */,
 				505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +531,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505F5EE31FAA29810093380D /* CCNumberValidatorTests.swift in Sources */,
+				50F616921FAB68860093D23E /* ForceCastTests.swift in Sources */,
+				5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,12 +710,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Z84TYU2C;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.M-Code.CCNumberValidatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCNumberValidator.app/CCNumberValidator";
@@ -597,6 +730,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Z84TYU2C;
 				INFOPLIST_FILE = Tests/Info.plist;
