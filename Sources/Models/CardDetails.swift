@@ -4,6 +4,7 @@ public struct CardDetails: Decodable {
     let bin: String
     let bank: String
     let card: String
+    let type: String
     let level: String
     let country: String
     let countryCode: String
@@ -18,6 +19,7 @@ extension CardDetails {
         case bin
         case bank
         case card
+        case type
         case level
         case country
         case countryCode = "countrycode"
