@@ -18,6 +18,8 @@ def test_pods
 end
 
 def ui_pods
+  pod 'HexColors', '~> 5.0'
+  pod 'Pastel', '~> 0.3'
   pod 'Reveal-SDK', :configurations => ['Debug']
   pod 'SnapKit', '~> 4.0.0'
 end
@@ -33,3 +35,18 @@ target 'CCNumberValidator' do
     test_pods
   end
 end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        case target.name
+            when 'HexColors'
+            swift_version = '3.0'
+            else
+            swift_version = '4.0'
+        end
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = swift_version
+        end
+    end
+end
+

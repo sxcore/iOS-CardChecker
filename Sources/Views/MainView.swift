@@ -7,19 +7,19 @@ public class MainView: UIView {
 
     let validationIndicatorView: ValidationIndicatorView = Factory.validationIndicatorView()
     let creditCardControlView: CreditCardControlView = Factory.creditCardControlView()
+
     let generateButton: UIButton = Factory.generateButton()
     let validateButton: UIButton = Factory.validateButton()
 
     public init() {
         super.init(frame: .zero)
 
-        backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-
         addSubviews()
         configureAutolayout()
     }
 
     private func addSubviews() {
+        addSubview(backgroundView)
         stackView.addArrangedSubview(validationIndicatorView)
         stackView.addArrangedSubview(creditCardControlView)
         stackView.addArrangedSubview(generateButton)
@@ -29,6 +29,10 @@ public class MainView: UIView {
     }
 
     private func configureAutolayout() {
+        backgroundView.snp.makeConstraints { make -> Void in
+            make.edges.equalToSuperview()
+        }
+
         stackView.snp.makeConstraints { make -> Void in
             make.left.right.centerY.equalToSuperview()
         }
@@ -54,6 +58,10 @@ public class MainView: UIView {
         }
 
     }
+
+    // MARK: - Privates
+
+    private let backgroundView: UIView = BackgroundGradientWithLogo()
 
     // MARK: - Required initializer
 
