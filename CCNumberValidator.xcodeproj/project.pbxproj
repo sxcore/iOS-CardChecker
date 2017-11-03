@@ -20,6 +20,7 @@
 		50B5A79E1FAC290C00013434 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A79D1FAC290C00013434 /* CustomButton.swift */; };
 		50B5A7A01FAC2B4900013434 /* UIImage+FromColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */; };
 		50B5A7A21FAC2FB200013434 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A7A11FAC2FB200013434 /* BackgroundView.swift */; };
+		50B5A7A41FAC365400013434 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B5A7A31FAC365400013434 /* Images.xcassets */; };
 		50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */; };
 		50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C051FABBAA800640B34 /* MainView+Factory.swift */; };
 		50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */; };
@@ -61,6 +62,7 @@
 		50B5A79D1FAC290C00013434 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FromColor.swift"; sourceTree = "<group>"; };
 		50B5A7A11FAC2FB200013434 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		50B5A7A31FAC365400013434 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardControlView.swift; sourceTree = "<group>"; };
 		50EA7C051FABBAA800640B34 /* MainView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Factory.swift"; sourceTree = "<group>"; };
 		50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreditCardControlView+Factory.swift"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				5003CB301FAAB34000D07085 /* APIKey.plist */,
 				505F5ED41FAA29810093380D /* Assets.xcassets */,
+				50B5A7A31FAC365400013434 /* Images.xcassets */,
 				505F5ED91FAA29810093380D /* Info.plist */,
 				505F5ED61FAA29810093380D /* LaunchScreen.storyboard */,
 			);
@@ -122,9 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				50EA7C0B1FAC05D300640B34 /* Subviews */,
+				50B5A7A11FAC2FB200013434 /* BackgroundView.swift */,
 				50EA7C051FABBAA800640B34 /* MainView+Factory.swift */,
 				5003CB3B1FAAC2AB00D07085 /* MainView.swift */,
-				50B5A7A11FAC2FB200013434 /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5003CB311FAAB34100D07085 /* APIKey.plist in Resources */,
+				50B5A7A41FAC365400013434 /* Images.xcassets in Resources */,
 				505F5ED81FAA29810093380D /* LaunchScreen.storyboard in Resources */,
 				505F5ED51FAA29810093380D /* Assets.xcassets in Resources */,
 			);
