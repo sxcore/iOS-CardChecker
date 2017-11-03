@@ -7,6 +7,7 @@ class BackgroundGradientWithLogo: UIView {
 
     init() {
         super.init(frame: .zero)
+
         configureBackgroundGradient()
         configureSubviews()
         configureAutolayout()

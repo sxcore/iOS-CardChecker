@@ -14,8 +14,8 @@ extension MainView {
         }
 
         static func validationIndicatorView() -> ValidationIndicatorView {
-            let validationIndicatorView = ValidationIndicatorView()
-            validationIndicatorView.backgroundColor = UIColor.green
+            let validationIndicatorView = ValidationIndicatorView(type: .neutral)
+            validationIndicatorView.layer.cornerRadius = 10
             return validationIndicatorView
         }
 

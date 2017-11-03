@@ -38,7 +38,7 @@ public class MainView: UIView {
         }
 
         validationIndicatorView.snp.makeConstraints { make -> Void in
-            make.height.equalTo(100)
+            make.height.equalTo(50)
             make.left.equalToSuperview().offset(5)
             make.right.equalToSuperview().offset(-5)
         }

@@ -1,13 +1,5 @@
-import SnapKit
+import HexColors
 import UIKit
-
-enum ValidationIndicatorViewType {
-    case negative, neutral, positive
-}
-
-class ValidationIndicatorView: UIView {
-
-}
 
 extension ValidationIndicatorViewType {
 
@@ -38,11 +30,22 @@ extension ValidationIndicatorViewType {
     var backgroundColor: UIColor {
         switch self {
         case .negative:
-            return UIColor.red
+            guard let redColor = UIColor("#17EAD9", alpha: 1.0) else {
+                fatalError("Could not Fetch Red Color")
+            }
+            return redColor
+
         case .neutral:
-            return UIColor.green
+            guard let orangeColor = UIColor("#FD8B06", alpha: 1.0) else {
+                fatalError("Could not Fetch Orange Color")
+            }
+            return orangeColor
+
         case .positive:
-            return UIColor.orange
+            guard let greenColor = UIColor("#5DC869", alpha: 1.0) else {
+                fatalError("Could not Fetch Green Color")
+            }
+            return greenColor
         }
     }
 
