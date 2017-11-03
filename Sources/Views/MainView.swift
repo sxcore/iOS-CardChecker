@@ -30,7 +30,8 @@ public class MainView: UIView {
 
     private func configureAutolayout() {
         stackView.snp.makeConstraints { make -> Void in
-            make.edges.equalToSuperview()
+            make.height.equalTo(400)
+            make.left.right.centerY.equalToSuperview()
         }
 
         validationIndicatorView.snp.makeConstraints { make -> Void in

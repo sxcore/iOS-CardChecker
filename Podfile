@@ -18,6 +18,7 @@ def test_pods
 end
 
 def ui_pods
+  pod 'Reveal-SDK', :configurations => ['Debug']
   pod 'SnapKit', '~> 4.0.0'
 end
 

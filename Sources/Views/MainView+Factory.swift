@@ -25,11 +25,13 @@ extension MainView {
 
         static func generateButton() -> UIButton {
             let generateButton = UIButton()
+            generateButton.titleLabel?.text = "Generate Random Credit Card Code"
             return generateButton
         }
 
         static func validateButton() -> UIButton {
             let validateButton = UIButton()
+            validateButton.titleLabel?.text = "Validete Given Credit Card Code"
             return validateButton
         }
 
