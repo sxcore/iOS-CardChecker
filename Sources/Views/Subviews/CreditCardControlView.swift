@@ -25,20 +25,20 @@ class CreditCardControlView: UIView {
         creditCardNumberTextField.snp.makeConstraints { make -> Void in
             make.top.equalToSuperview()
             make.bottom.equalToSuperview()
-            make.left.equalToSuperview().offset(5)
+            make.left.equalToSuperview().offset(10)
         }
 
         dateNumberTextField.snp.makeConstraints { make -> Void in
             make.top.equalToSuperview()
             make.bottom.equalToSuperview()
-            make.left.greaterThanOrEqualTo(creditCardNumberTextField.snp.right).offset(10)
+            make.left.equalTo(creditCardNumberTextField.snp.right).offset(5)
+            make.right.greaterThanOrEqualTo(aCVCNumberTextField.snp.left).offset(-10)
         }
 
         aCVCNumberTextField.snp.makeConstraints { make -> Void in
             make.top.equalToSuperview()
             make.bottom.equalToSuperview()
-            make.left.greaterThanOrEqualTo(dateNumberTextField.snp.right).offset(10)
-            make.right.equalToSuperview().offset(5)
+            make.right.equalToSuperview().offset(-10)
         }
     }
 
