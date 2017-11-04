@@ -16,6 +16,8 @@
 		501DF9541FACA3280075A3EE /* CardDetailsDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DF9531FACA3280075A3EE /* CardDetailsDeserializer.swift */; };
 		501DF9571FACA3B60075A3EE /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DF9561FACA3B60075A3EE /* Deserializer.swift */; };
 		501DF95B1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DF95A1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift */; };
+		502904961FAE0A7E000E7DFE /* CardDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502904951FAE0A7E000E7DFE /* CardDetailsService.swift */; };
+		5029049B1FAE0C26000E7DFE /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029049A1FAE0C26000E7DFE /* URLProvider.swift */; };
 		50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50474DD81FAB61BD00906551 /* ForceCast.swift */; };
 		505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECD1FAA29810093380D /* AppDelegate.swift */; };
 		505F5ED01FAA29810093380D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECF1FAA29810093380D /* MainViewController.swift */; };
@@ -59,6 +61,8 @@
 		501DF9531FACA3280075A3EE /* CardDetailsDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsDeserializer.swift; sourceTree = "<group>"; };
 		501DF9561FACA3B60075A3EE /* Deserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
 		501DF95A1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsDeserializerSpec.swift; sourceTree = "<group>"; };
+		502904951FAE0A7E000E7DFE /* CardDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsService.swift; sourceTree = "<group>"; };
+		5029049A1FAE0C26000E7DFE /* URLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
 		50474DD81FAB61BD00906551 /* ForceCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceCast.swift; sourceTree = "<group>"; };
 		50474DDB1FAB66ED00906551 /* ForceCastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceCastTests.swift; sourceTree = "<group>"; };
 		505F5ECA1FAA29810093380D /* CCNumberValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCNumberValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +159,8 @@
 		501DF9521FACA3090075A3EE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				502904991FAE0C13000E7DFE /* Providers */,
+				502904941FAE0A60000E7DFE /* Services */,
 				501DF9551FACA3350075A3EE /* Deserializers */,
 			);
 			path = Networking;
@@ -183,6 +189,22 @@
 				501DF95A1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift */,
 			);
 			path = Deserialization;
+			sourceTree = "<group>";
+		};
+		502904941FAE0A60000E7DFE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				502904951FAE0A7E000E7DFE /* CardDetailsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		502904991FAE0C13000E7DFE /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				5029049A1FAE0C26000E7DFE /* URLProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		50474DD71FAB61A500906551 /* Extensions */ = {
@@ -563,6 +585,7 @@
 			files = (
 				5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */,
 				50B5A7AD1FAC418D00013434 /* ValidationIndicatorView+Factory.swift in Sources */,
+				5029049B1FAE0C26000E7DFE /* URLProvider.swift in Sources */,
 				505F5ED01FAA29810093380D /* MainViewController.swift in Sources */,
 				50B5A7A21FAC2FB200013434 /* BackgroundView.swift in Sources */,
 				50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */,
@@ -575,6 +598,7 @@
 				501DF9541FACA3280075A3EE /* CardDetailsDeserializer.swift in Sources */,
 				50B5A7A01FAC2B4900013434 /* UIImage+FromColor.swift in Sources */,
 				501DF94E1FAC9D8D0075A3EE /* CardDetails.swift in Sources */,
+				502904961FAE0A7E000E7DFE /* CardDetailsService.swift in Sources */,
 				50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */,
 				50B5A7A81FAC3D2D00013434 /* ValidationIndicatorViewTypeExtension.swift in Sources */,
 				501DF9571FACA3B60075A3EE /* Deserializer.swift in Sources */,
