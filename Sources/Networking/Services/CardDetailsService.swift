@@ -23,13 +23,12 @@ class CardDetailsService: CardDetailsServiceProtocol {
 
         session.dataTask(with: request) {data, response, error in
             guard let data = data, error == nil, response != nil else {
-                print("Something went wrong")
                 return
             }
 
             do {
-                let establishments = try JSONDecoder().decode(self.cardDetailsDeserializer, from: data)
-                print(establishments)
+                let decodedJSON = try self.cardDetailsDeserializer.deserialize(json: data)
+
             } catch {
                 print(error)
             }
