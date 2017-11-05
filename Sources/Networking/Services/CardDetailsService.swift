@@ -14,7 +14,7 @@ class CardDetailsService: CardDetailsServiceProtocol {
     }
 
     func fetchCardDetails(withNumber number: Int) -> Promise<CardDetails> {
-        guard let URL = URL(string: "\(URLProvider)/\(APIKeyProvider)/\(number)") else {
+        guard let URL = URL(string: "/\(URLProvider.url)/\(APIKeyProvider.apiKey)/\(number)/") else {
             fatalError("Could not reformat string to URL!")
         }
         var request = URLRequest(url: URL)
@@ -27,6 +27,7 @@ class CardDetailsService: CardDetailsServiceProtocol {
             let dataTask = session.dataTask(with: request) { data, response, error in
                 if let data = data,
                    let json = (try? decoder.decode(CardDetails.self, from: data)) {
+
                     fullfill(json)
 
                 } else if let error = error {
