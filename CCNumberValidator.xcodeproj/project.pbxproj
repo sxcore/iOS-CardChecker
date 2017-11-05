@@ -19,6 +19,9 @@
 		502904961FAE0A7E000E7DFE /* CardDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502904951FAE0A7E000E7DFE /* CardDetailsService.swift */; };
 		5029049B1FAE0C26000E7DFE /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029049A1FAE0C26000E7DFE /* URLProvider.swift */; };
 		50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50474DD81FAB61BD00906551 /* ForceCast.swift */; };
+		505DCF681FAF4AB60028D880 /* APIKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DCF671FAF4AB60028D880 /* APIKeyProvider.swift */; };
+		505DCF6A1FAF4D960028D880 /* ProvidersAssemply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DCF691FAF4D960028D880 /* ProvidersAssemply.swift */; };
+		505DCF6C1FAF4E5F0028D880 /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DCF6B1FAF4E5F0028D880 /* ServicesAssembly.swift */; };
 		505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECD1FAA29810093380D /* AppDelegate.swift */; };
 		505F5ED01FAA29810093380D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F5ECF1FAA29810093380D /* MainViewController.swift */; };
 		505F5ED51FAA29810093380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F5ED41FAA29810093380D /* Assets.xcassets */; };
@@ -65,6 +68,9 @@
 		5029049A1FAE0C26000E7DFE /* URLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
 		50474DD81FAB61BD00906551 /* ForceCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceCast.swift; sourceTree = "<group>"; };
 		50474DDB1FAB66ED00906551 /* ForceCastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceCastTests.swift; sourceTree = "<group>"; };
+		505DCF671FAF4AB60028D880 /* APIKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyProvider.swift; sourceTree = "<group>"; };
+		505DCF691FAF4D960028D880 /* ProvidersAssemply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersAssemply.swift; sourceTree = "<group>"; };
+		505DCF6B1FAF4E5F0028D880 /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
 		505F5ECA1FAA29810093380D /* CCNumberValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCNumberValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F5ECD1FAA29810093380D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505F5ECF1FAA29810093380D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,8 @@
 			children = (
 				5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */,
 				5003CB371FAABF0400D07085 /* MainAssembly.swift */,
+				505DCF691FAF4D960028D880 /* ProvidersAssemply.swift */,
+				505DCF6B1FAF4E5F0028D880 /* ServicesAssembly.swift */,
 			);
 			path = "Dependecy Injection";
 			sourceTree = "<group>";
@@ -159,9 +167,9 @@
 		501DF9521FACA3090075A3EE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				501DF9551FACA3350075A3EE /* Deserializers */,
 				502904991FAE0C13000E7DFE /* Providers */,
 				502904941FAE0A60000E7DFE /* Services */,
-				501DF9551FACA3350075A3EE /* Deserializers */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 		502904991FAE0C13000E7DFE /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				505DCF671FAF4AB60028D880 /* APIKeyProvider.swift */,
 				5029049A1FAE0C26000E7DFE /* URLProvider.swift */,
 			);
 			path = Providers;
@@ -585,7 +594,9 @@
 			files = (
 				5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */,
 				50B5A7AD1FAC418D00013434 /* ValidationIndicatorView+Factory.swift in Sources */,
+				505DCF681FAF4AB60028D880 /* APIKeyProvider.swift in Sources */,
 				5029049B1FAE0C26000E7DFE /* URLProvider.swift in Sources */,
+				505DCF6A1FAF4D960028D880 /* ProvidersAssemply.swift in Sources */,
 				505F5ED01FAA29810093380D /* MainViewController.swift in Sources */,
 				50B5A7A21FAC2FB200013434 /* BackgroundView.swift in Sources */,
 				50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */,
@@ -596,6 +607,7 @@
 				50B5A79E1FAC290C00013434 /* CustomButton.swift in Sources */,
 				5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */,
 				501DF9541FACA3280075A3EE /* CardDetailsDeserializer.swift in Sources */,
+				505DCF6C1FAF4E5F0028D880 /* ServicesAssembly.swift in Sources */,
 				50B5A7A01FAC2B4900013434 /* UIImage+FromColor.swift in Sources */,
 				501DF94E1FAC9D8D0075A3EE /* CardDetails.swift in Sources */,
 				502904961FAE0A7E000E7DFE /* CardDetailsService.swift in Sources */,
