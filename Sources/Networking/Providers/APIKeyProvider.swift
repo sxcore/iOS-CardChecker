@@ -19,7 +19,7 @@ class APIKeyProvider: APIKeyProviding {
         }
 
         guard let apiKeysFromPlist = NSDictionary(contentsOfFile: apiKeyPlistPath) as? [String: AnyObject] else {
-            fatalError("URL: Couldn't unwrap custom Plist properly - maybe it's Array and not Dictionary?")
+            fatalError("Couldn't unwrap custom Plist properly - maybe it's Array and not Dictionary?")
         }
 
         self.apiKeyDictionary = apiKeysFromPlist
