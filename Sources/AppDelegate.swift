@@ -6,22 +6,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private let assembler: Assembler
+    private let rootViewController: UIViewController
+
     var window: UIWindow?
 
     override init() {
         self.assembler = Assembler.defaultAssembler
+        self.rootViewController = assembler.resolver ~> MainViewController.self
     }
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let mainViewController = MainViewController()
+        let rootViewController = self.rootViewController
 
         guard let window = window else {
             fatalError("Window was handled unexpectedly in AppDelegate")
         }
 
-        window.rootViewController = mainViewController
+        window.rootViewController = rootViewController
         window.makeKeyAndVisible()
 
         return true

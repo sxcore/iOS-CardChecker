@@ -13,8 +13,6 @@
 		5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */; };
 		5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB3B1FAAC2AB00D07085 /* MainView.swift */; };
 		501DF94E1FAC9D8D0075A3EE /* CardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DF94D1FAC9D8D0075A3EE /* CardDetails.swift */; };
-		501DF9541FACA3280075A3EE /* CardDetailsDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DF9531FACA3280075A3EE /* CardDetailsDeserializer.swift */; };
-		501DF9571FACA3B60075A3EE /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DF9561FACA3B60075A3EE /* Deserializer.swift */; };
 		501DF95B1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DF95A1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift */; };
 		502904961FAE0A7E000E7DFE /* CardDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502904951FAE0A7E000E7DFE /* CardDetailsService.swift */; };
 		5029049B1FAE0C26000E7DFE /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029049A1FAE0C26000E7DFE /* URLProvider.swift */; };
@@ -61,8 +59,6 @@
 		5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		5003CB3B1FAAC2AB00D07085 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		501DF94D1FAC9D8D0075A3EE /* CardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetails.swift; sourceTree = "<group>"; };
-		501DF9531FACA3280075A3EE /* CardDetailsDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsDeserializer.swift; sourceTree = "<group>"; };
-		501DF9561FACA3B60075A3EE /* Deserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
 		501DF95A1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsDeserializerSpec.swift; sourceTree = "<group>"; };
 		502904951FAE0A7E000E7DFE /* CardDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsService.swift; sourceTree = "<group>"; };
 		5029049A1FAE0C26000E7DFE /* URLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
@@ -167,20 +163,10 @@
 		501DF9521FACA3090075A3EE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				501DF9551FACA3350075A3EE /* Deserializers */,
 				502904991FAE0C13000E7DFE /* Providers */,
 				502904941FAE0A60000E7DFE /* Services */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		501DF9551FACA3350075A3EE /* Deserializers */ = {
-			isa = PBXGroup;
-			children = (
-				501DF9531FACA3280075A3EE /* CardDetailsDeserializer.swift */,
-				501DF9561FACA3B60075A3EE /* Deserializer.swift */,
-			);
-			path = Deserializers;
 			sourceTree = "<group>";
 		};
 		501DF9581FACA5450075A3EE /* Networking */ = {
@@ -606,14 +592,12 @@
 				50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */,
 				50B5A79E1FAC290C00013434 /* CustomButton.swift in Sources */,
 				5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */,
-				501DF9541FACA3280075A3EE /* CardDetailsDeserializer.swift in Sources */,
 				505DCF6C1FAF4E5F0028D880 /* ServicesAssembly.swift in Sources */,
 				50B5A7A01FAC2B4900013434 /* UIImage+FromColor.swift in Sources */,
 				501DF94E1FAC9D8D0075A3EE /* CardDetails.swift in Sources */,
 				502904961FAE0A7E000E7DFE /* CardDetailsService.swift in Sources */,
 				50474DD91FAB61BD00906551 /* ForceCast.swift in Sources */,
 				50B5A7A81FAC3D2D00013434 /* ValidationIndicatorViewTypeExtension.swift in Sources */,
-				501DF9571FACA3B60075A3EE /* Deserializer.swift in Sources */,
 				505F5ECE1FAA29810093380D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
