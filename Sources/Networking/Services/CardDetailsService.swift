@@ -7,8 +7,10 @@ protocol CardDetailsServiceProtocol {
 
 class CardDetailsService: CardDetailsServiceProtocol {
 
-    init(APIKeyProvider: APIKeyProviding,
+    init(cardDetailsDeserializer: Deserializer<CardDetails>,
+         APIKeyProvider: APIKeyProviding,
          URLProvider: URLProviding) {
+        self.cardDetailsDeserializer = cardDetailsDeserializer
         self.APIKeyProvider = APIKeyProvider
         self.URLProvider = URLProvider
     }
@@ -38,6 +40,7 @@ class CardDetailsService: CardDetailsServiceProtocol {
 
     // MARK: - Privates
 
+    private let cardDetailsDeserializer: Deserializer<CardDetails>
     private let APIKeyProvider: APIKeyProviding
     private let URLProvider: URLProviding
 }
