@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
     }
 
     override func touchesBegan(_: Set<UITouch>, with: UIEvent?) {
+
         mainView.creditCardControlView.creditCardNumberTextField.resignFirstResponder()
         mainView.creditCardControlView.aCVCNumberTextField.resignFirstResponder()
         mainView.creditCardControlView.dateNumberTextField.resignFirstResponder()
