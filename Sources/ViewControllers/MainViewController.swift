@@ -1,21 +1,28 @@
+import PromiseKit
 import UIKit
 
 class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        fetchCardDetails(number: 5157359818590564)
     }
-
     // MARK: - Initializer
 
-    init() {
-        super.init(nibName: nil, bundle: nil)
+    init(cardDetailsService: CardDetailsServiceProtocol) {
+        self.cardDetailsService = cardDetailsService
 
+        super.init(nibName: nil, bundle: nil)
     }
 
     override func loadView() {
         view = MainView()
+    }
+
+    func fetchCardDetails(number: Int) {
+        _ = cardDetailsService.fetchCardDetails(withNumber: number).then { cardDetails in
+            print (cardDetails)
+        }
     }
 
      var mainView: MainView { return forceCast(view) }
@@ -23,6 +30,10 @@ class MainViewController: UIViewController {
     // MARK: - ControllerProviding
 
     var controller: UIViewController { return self }
+
+    // MARK: - Privates
+
+    private let cardDetailsService: CardDetailsServiceProtocol
 
     // MARK: - Required initializer
 

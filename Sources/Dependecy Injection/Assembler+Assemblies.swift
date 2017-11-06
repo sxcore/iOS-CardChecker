@@ -9,7 +9,7 @@ public extension Assembler {
     }
 
     static var defaultAssemblies: [Assembly] {
-        return [MainAssembly()]
+        return [MainAssembly(), ProvidersAssembly(), ServicesAssembly()]
     }
 
 }
