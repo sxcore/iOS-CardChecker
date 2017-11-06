@@ -12,6 +12,7 @@
 		5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB371FAABF0400D07085 /* MainAssembly.swift */; };
 		5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */; };
 		5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB3B1FAAC2AB00D07085 /* MainView.swift */; };
+		50150E1A1FAFF9AC00BC08B2 /* KeyboardWillShowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50150E191FAFF9AC00BC08B2 /* KeyboardWillShowHandler.swift */; };
 		501DF94E1FAC9D8D0075A3EE /* CardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DF94D1FAC9D8D0075A3EE /* CardDetails.swift */; };
 		501DF95B1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DF95A1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift */; };
 		502904961FAE0A7E000E7DFE /* CardDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502904951FAE0A7E000E7DFE /* CardDetailsService.swift */; };
@@ -58,6 +59,7 @@
 		5003CB371FAABF0400D07085 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		5003CB3B1FAAC2AB00D07085 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		50150E191FAFF9AC00BC08B2 /* KeyboardWillShowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardWillShowHandler.swift; sourceTree = "<group>"; };
 		501DF94D1FAC9D8D0075A3EE /* CardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetails.swift; sourceTree = "<group>"; };
 		501DF95A1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsDeserializerSpec.swift; sourceTree = "<group>"; };
 		502904951FAE0A7E000E7DFE /* CardDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsService.swift; sourceTree = "<group>"; };
@@ -152,6 +154,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		50150E181FAFF98C00BC08B2 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				50150E191FAFF9AC00BC08B2 /* KeyboardWillShowHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
 		501DF94C1FAC9D750075A3EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +253,7 @@
 		505F5ECC1FAA29810093380D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				50150E181FAFF98C00BC08B2 /* Handlers */,
 				5003CB341FAABE7400D07085 /* Dependecy Injection */,
 				50474DD71FAB61A500906551 /* Extensions */,
 				501DF94C1FAC9D750075A3EE /* Models */,
@@ -582,6 +593,7 @@
 			files = (
 				5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */,
 				50B5A7AD1FAC418D00013434 /* ValidationIndicatorView+Factory.swift in Sources */,
+				50150E1A1FAFF9AC00BC08B2 /* KeyboardWillShowHandler.swift in Sources */,
 				505DCF681FAF4AB60028D880 /* APIKeyProvider.swift in Sources */,
 				5029049B1FAE0C26000E7DFE /* URLProvider.swift in Sources */,
 				505DCF6A1FAF4D960028D880 /* ProvidersAssemply.swift in Sources */,
