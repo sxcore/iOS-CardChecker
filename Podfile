@@ -7,7 +7,7 @@ def di_pods
 end
 
 def helper_pods
-  pod 'PromiseKit', '~> 4.0'
+  pod 'PromiseKit', '~> 4.5.0'
   pod 'SwiftLint', '~> 0.22'
 end
 
@@ -19,6 +19,7 @@ end
 
 def ui_pods
   pod 'HexColors', '~> 5.0'
+  pod 'IQKeyboardManagerSwift', ' ~> 5.0.6'
   pod 'Pastel', '~> 0.3'
   pod 'Reveal-SDK', :configurations => ['Debug']
   pod 'SnapKit', '~> 4.0.0'

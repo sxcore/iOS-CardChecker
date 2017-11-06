@@ -3,10 +3,6 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        fetchCardDetails(number: 5157359818590564)
-    }
     // MARK: - Initializer
 
     init(cardDetailsService: CardDetailsServiceProtocol) {
