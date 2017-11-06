@@ -31,7 +31,9 @@ class CardDetailsService: CardDetailsServiceProtocol {
                     fullfill(json)
                 } else if let error = error {
                     reject(error)
-                }}
+                }
+
+            }
             dataTask.resume()
         }
     }

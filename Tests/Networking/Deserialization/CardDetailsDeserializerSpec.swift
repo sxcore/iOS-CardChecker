@@ -7,21 +7,22 @@ class CommentsDeserializerSpec: QuickSpec {
     // swiftlint:disable function_body_length
     override func spec() {
         describe("Card Details deserializer") {
-            var deserializer: CardDetailsDeserializer!
+            var decoder: JSONDecoder!
 
             beforeEach {
-                deserializer = CardDetailsDeserializer(jsonDecoder: JSONDecoder())
+                decoder = JSONDecoder()
             }
 
             afterEach {
-                deserializer = nil
+                decoder = nil
             }
 
             describe("deserializing with success") {
                 var deserialized: CardDetails!
 
                 beforeEach {
-                    let response: Any? = [
+                    let response = """
+                    {
                                 "bin": "515735",
                                 "bank": "CITIBANK N.A.",
                                 "card": "MASTERCARD",
@@ -32,9 +33,10 @@ class CommentsDeserializerSpec: QuickSpec {
                                 "website": "www.randomsite.com",
                                 "phone": "666-666-666",
                                 "valid": "true"
-                            ]
+                    }
+                    """.data(using: .utf8)!
 
-                    deserialized = try! deserializer.deserialize(json: response)
+                    deserialized = try! decoder.decode(CardDetails.self, from: response)
                 }
 
                 afterEach {
@@ -80,15 +82,8 @@ class CommentsDeserializerSpec: QuickSpec {
                     it("should have correct valid") {
                         expect(deserialized.valid) == "true"
                     }
-
-            describe("deserializing with failure") {
-                it("throw emptyJson error") {
-                    expect { _ = try deserializer.deserialize(json: nil) }
-                        .to(throwError(CardDetailsDeserializerError.emptyJson))
-                    }
                 }
             }
         }
-    }
-
+    
 }
