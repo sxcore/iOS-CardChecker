@@ -19,7 +19,7 @@ end
 
 def ui_pods
   pod 'HexColors', '~> 5.0'
-  pod 'IQKeyboardManagerSwift', ' ~> 5.0.6'
+  pod 'IHKeyboardAvoiding', '~> 4.1'
   pod 'Pastel', '~> 0.3'
   pod 'Reveal-SDK', :configurations => ['Debug']
   pod 'SnapKit', '~> 4.0.0'
