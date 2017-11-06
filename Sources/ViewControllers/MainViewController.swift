@@ -2,7 +2,7 @@ import IHKeyboardAvoiding
 import PromiseKit
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, CreditCardNumberDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +16,8 @@ class MainViewController: UIViewController {
         self.cardDetailsService = cardDetailsService
 
         super.init(nibName: nil, bundle: nil)
+
+        mainView.delegate = self
     }
 
     override func loadView() {
@@ -41,6 +43,16 @@ class MainViewController: UIViewController {
     private func configureKeyboardAvoiding() {
         KeyboardAvoiding.avoidingView = mainView.stackView
         KeyboardAvoiding.paddingForCurrentAvoidingView = 10.0
+    }
+
+    // MARK: - Delegates
+
+    func validationButtonClicked(string: String) {
+        guard let stringAsInt = Int(string) else {
+            fatalError("String as integer failed")
+        }
+
+        fetchCardDetails(number: stringAsInt)
     }
 
     // MARK: - Required initializer

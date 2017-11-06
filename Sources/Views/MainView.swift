@@ -1,6 +1,10 @@
 import SnapKit
 import UIKit
 
+protocol CreditCardNumberDelegate: class {
+    func validationButtonClicked(string: String)
+}
+
 public class MainView: UIView {
 
     let stackView: UIStackView = Factory.stackView()
@@ -10,6 +14,8 @@ public class MainView: UIView {
 
     let generateButton: UIButton = Factory.generateButton()
     let validateButton: UIButton = Factory.validateButton()
+
+    weak var delegate: CreditCardNumberDelegate?
 
     var onValidateButtonTapped: (() -> Void)?
 
@@ -82,6 +88,12 @@ public class MainView: UIView {
     @objc
     func didTapValidateButton() {
         endEditing(true)
+
+        guard let text = creditCardControlView.creditCardNumberTextField.text  else {
+            fatalError("Couldn't get text")
+        }
+
+        delegate?.validationButtonClicked(string: text)
     }
 
     // MARK: - Privates
