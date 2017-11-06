@@ -54,5 +54,3 @@ func generateCreditCardNumber(for type: CreditCardType) -> String {
     }
 
 }
-
-
