@@ -8,6 +8,7 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
         super.viewDidLoad()
 
         configureKeyboardAvoiding()
+        resetToPendingAnimation()
     }
 
     // MARK: - Initializer
@@ -25,8 +26,16 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
     }
 
     func fetchCardDetails(number: Int) {
-        _ = cardDetailsService.fetchCardDetails(withNumber: number).then { cardDetails in
-            print (cardDetails)
+            resetToPendingAnimation()
+        _ = cardDetailsService.fetchCardDetails(withNumber: number).then { cardDetails -> Void in
+
+            if cardDetails.valid == "true" {
+                self.validAnimation()
+            }
+
+            if cardDetails.valid == "false" {
+                self.invalidAnimation()
+            }
         }
     }
 

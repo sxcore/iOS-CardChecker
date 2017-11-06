@@ -13,8 +13,25 @@ extension MainView {
             return stackView
         }
 
-        static func validationIndicatorView() -> ValidationIndicatorView {
+        static func containerView() -> UIView {
+            let containerView = UIView()
+            return containerView
+        }
+
+        static func validationPendingView() -> ValidationIndicatorView {
             let validationIndicatorView = ValidationIndicatorView(type: .neutral)
+            validationIndicatorView.layer.cornerRadius = 10
+            return validationIndicatorView
+        }
+
+        static func validationPositiveView() -> ValidationIndicatorView {
+            let validationIndicatorView = ValidationIndicatorView(type: .positive)
+            validationIndicatorView.layer.cornerRadius = 10
+            return validationIndicatorView
+        }
+
+        static func validationNegativeView() -> ValidationIndicatorView {
+            let validationIndicatorView = ValidationIndicatorView(type: .negative)
             validationIndicatorView.layer.cornerRadius = 10
             return validationIndicatorView
         }

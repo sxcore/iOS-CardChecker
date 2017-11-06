@@ -9,7 +9,11 @@ public class MainView: UIView {
 
     let stackView: UIStackView = Factory.stackView()
 
-    let validationIndicatorView: ValidationIndicatorView = Factory.validationIndicatorView()
+    let containerView: UIView = Factory.containerView()
+    let validationPendingView: ValidationIndicatorView = Factory.validationPendingView()
+    let validationPositiveView: ValidationIndicatorView = Factory.validationPositiveView()
+    let validationNegativeView: ValidationIndicatorView = Factory.validationNegativeView()
+
     let creditCardControlView: CreditCardControlView = Factory.creditCardControlView()
 
     let generateButton: UIButton = Factory.generateButton()
@@ -29,7 +33,10 @@ public class MainView: UIView {
 
     private func addSubviews() {
         addSubview(backgroundView)
-        stackView.addArrangedSubview(validationIndicatorView)
+        containerView.addSubview(validationPendingView)
+        containerView.addSubview(validationPositiveView)
+        containerView.addSubview(validationNegativeView)
+        stackView.addArrangedSubview(containerView)
         stackView.addArrangedSubview(creditCardControlView)
         stackView.addArrangedSubview(generateButton)
         stackView.addArrangedSubview(validateButton)
@@ -46,10 +53,22 @@ public class MainView: UIView {
             make.left.right.centerY.equalToSuperview()
         }
 
-        validationIndicatorView.snp.makeConstraints { make -> Void in
+        containerView.snp.makeConstraints { make -> Void in
             make.height.equalTo(50)
             make.left.equalToSuperview().offset(5)
             make.right.equalToSuperview().offset(-5)
+        }
+
+        validationPendingView.snp.makeConstraints { make -> Void in
+            make.edges.equalToSuperview()
+        }
+
+        validationPositiveView.snp.makeConstraints { make -> Void in
+            make.edges.equalToSuperview()
+        }
+
+        validationNegativeView.snp.makeConstraints { make -> Void in
+            make.edges.equalToSuperview()
         }
 
         creditCardControlView.snp.makeConstraints { make -> Void in
