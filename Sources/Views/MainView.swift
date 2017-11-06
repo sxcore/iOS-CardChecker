@@ -77,6 +77,11 @@ public class MainView: UIView {
         endEditing(true)
     }
 
+    @objc
+    func didTapValidateButton() {
+        endEditing(true)
+    }
+
     // MARK: - Privates
 
     private let backgroundView: UIView = BackgroundGradientWithLogo()
