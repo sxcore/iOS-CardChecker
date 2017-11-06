@@ -11,6 +11,8 @@ public class MainView: UIView {
     let generateButton: UIButton = Factory.generateButton()
     let validateButton: UIButton = Factory.validateButton()
 
+    var onValidateButtonTapped: (() -> Void)?
+
     public init() {
         super.init(frame: .zero)
 
