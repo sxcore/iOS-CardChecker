@@ -1,3 +1,4 @@
+import IHKeyboardAvoiding
 import PromiseKit
 import UIKit
 
@@ -6,6 +7,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureKeyboardAvoiding()
     }
 
     // MARK: - Initializer
@@ -18,6 +20,13 @@ class MainViewController: UIViewController {
 
     override func loadView() {
         view = MainView()
+    }
+
+    override func touchesBegan(_: Set<UITouch>, with: UIEvent?) {
+
+        mainView.creditCardControlView.creditCardNumberTextField.resignFirstResponder()
+        mainView.creditCardControlView.aCVCNumberTextField.resignFirstResponder()
+        mainView.creditCardControlView.dateNumberTextField.resignFirstResponder()
     }
 
     func fetchCardDetails(number: Int) {
@@ -35,6 +44,11 @@ class MainViewController: UIViewController {
     // MARK: - Privates
 
     private let cardDetailsService: CardDetailsServiceProtocol
+
+    private func configureKeyboardAvoiding() {
+        KeyboardAvoiding.avoidingView = mainView.stackView
+        KeyboardAvoiding.paddingForCurrentAvoidingView = 10.0
+    }
 
     // MARK: - Required initializer
 
