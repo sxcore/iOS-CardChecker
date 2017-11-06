@@ -42,4 +42,5 @@ class CardDetailsService: CardDetailsServiceProtocol {
 
     private let APIKeyProvider: APIKeyProviding
     private let URLProvider: URLProviding
+
 }
