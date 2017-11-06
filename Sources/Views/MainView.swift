@@ -16,6 +16,7 @@ public class MainView: UIView {
 
         addSubviews()
         configureAutolayout()
+        setUpGestureRecognition()
     }
 
     private func addSubviews() {
@@ -62,9 +63,24 @@ public class MainView: UIView {
 
     }
 
+    // MARK: - Gesture recognition
+
+    private func setUpGestureRecognition() {
+        tapGestureRecognizer.addTarget(self, action: #selector(didTapBackground))
+        addGestureRecognizer(tapGestureRecognizer)
+    }
+
+    // MARK: - Background tap
+
+    @objc
+    private func didTapBackground() {
+        endEditing(true)
+    }
+
     // MARK: - Privates
 
     private let backgroundView: UIView = BackgroundGradientWithLogo()
+    private let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer()
 
     // MARK: - Required initializer
 

@@ -22,13 +22,6 @@ class MainViewController: UIViewController {
         view = MainView()
     }
 
-    override func touchesBegan(_: Set<UITouch>, with: UIEvent?) {
-
-        mainView.creditCardControlView.creditCardNumberTextField.resignFirstResponder()
-        mainView.creditCardControlView.aCVCNumberTextField.resignFirstResponder()
-        mainView.creditCardControlView.dateNumberTextField.resignFirstResponder()
-    }
-
     func fetchCardDetails(number: Int) {
         _ = cardDetailsService.fetchCardDetails(withNumber: number).then { cardDetails in
             print (cardDetails)
