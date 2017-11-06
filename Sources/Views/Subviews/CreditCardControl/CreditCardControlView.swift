@@ -11,8 +11,16 @@ class CreditCardControlView: UIView {
         super.init(frame: .zero)
 
         backgroundColor = UIColor.white
+
+        setupDelegates()
         addSubviews()
         configureAutolayout()
+    }
+
+    private func setupDelegates() {
+        creditCardNumberTextField.delegate = self
+        dateNumberTextField.delegate = self
+        aCVCNumberTextField.delegate = self
     }
 
     private func addSubviews() {

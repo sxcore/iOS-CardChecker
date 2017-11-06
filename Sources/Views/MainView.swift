@@ -1,26 +1,42 @@
 import SnapKit
 import UIKit
 
+protocol CreditCardNumberDelegate: class {
+    func validationButtonClicked(string: String)
+}
+
 public class MainView: UIView {
 
     let stackView: UIStackView = Factory.stackView()
 
-    let validationIndicatorView: ValidationIndicatorView = Factory.validationIndicatorView()
+    let containerView: UIView = Factory.containerView()
+    let validationPendingView: ValidationIndicatorView = Factory.validationPendingView()
+    let validationPositiveView: ValidationIndicatorView = Factory.validationPositiveView()
+    let validationNegativeView: ValidationIndicatorView = Factory.validationNegativeView()
+
     let creditCardControlView: CreditCardControlView = Factory.creditCardControlView()
 
     let generateButton: UIButton = Factory.generateButton()
     let validateButton: UIButton = Factory.validateButton()
+
+    weak var delegate: CreditCardNumberDelegate?
+
+    var onValidateButtonTapped: (() -> Void)?
 
     public init() {
         super.init(frame: .zero)
 
         addSubviews()
         configureAutolayout()
+        setUpGestureRecognition()
     }
 
     private func addSubviews() {
         addSubview(backgroundView)
-        stackView.addArrangedSubview(validationIndicatorView)
+        containerView.addSubview(validationPendingView)
+        containerView.addSubview(validationPositiveView)
+        containerView.addSubview(validationNegativeView)
+        stackView.addArrangedSubview(containerView)
         stackView.addArrangedSubview(creditCardControlView)
         stackView.addArrangedSubview(generateButton)
         stackView.addArrangedSubview(validateButton)
@@ -37,10 +53,22 @@ public class MainView: UIView {
             make.left.right.centerY.equalToSuperview()
         }
 
-        validationIndicatorView.snp.makeConstraints { make -> Void in
+        containerView.snp.makeConstraints { make -> Void in
             make.height.equalTo(50)
             make.left.equalToSuperview().offset(5)
             make.right.equalToSuperview().offset(-5)
+        }
+
+        validationPendingView.snp.makeConstraints { make -> Void in
+            make.edges.equalToSuperview()
+        }
+
+        validationPositiveView.snp.makeConstraints { make -> Void in
+            make.edges.equalToSuperview()
+        }
+
+        validationNegativeView.snp.makeConstraints { make -> Void in
+            make.edges.equalToSuperview()
         }
 
         creditCardControlView.snp.makeConstraints { make -> Void in
@@ -62,9 +90,35 @@ public class MainView: UIView {
 
     }
 
+    // MARK: - Gesture recognition
+
+    private func setUpGestureRecognition() {
+        tapGestureRecognizer.addTarget(self, action: #selector(didTapBackground))
+        addGestureRecognizer(tapGestureRecognizer)
+    }
+
+    // MARK: - Background tap
+
+    @objc
+    private func didTapBackground() {
+        endEditing(true)
+    }
+
+    @objc
+    func didTapValidateButton() {
+        endEditing(true)
+
+        guard let text = creditCardControlView.creditCardNumberTextField.text  else {
+            fatalError("Couldn't get text")
+        }
+
+        delegate?.validationButtonClicked(string: text)
+    }
+
     // MARK: - Privates
 
     private let backgroundView: UIView = BackgroundGradientWithLogo()
+    private let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer()
 
     // MARK: - Required initializer
 

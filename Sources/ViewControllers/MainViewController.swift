@@ -1,18 +1,24 @@
+import IHKeyboardAvoiding
 import PromiseKit
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, CreditCardNumberDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchCardDetails(number: 5157359818590564)
+
+        configureKeyboardAvoiding()
+        resetToPendingAnimation()
     }
+
     // MARK: - Initializer
 
     init(cardDetailsService: CardDetailsServiceProtocol) {
         self.cardDetailsService = cardDetailsService
 
         super.init(nibName: nil, bundle: nil)
+
+        mainView.delegate = self
     }
 
     override func loadView() {
@@ -20,8 +26,16 @@ class MainViewController: UIViewController {
     }
 
     func fetchCardDetails(number: Int) {
-        _ = cardDetailsService.fetchCardDetails(withNumber: number).then { cardDetails in
-            print (cardDetails)
+            resetToPendingAnimation()
+        _ = cardDetailsService.fetchCardDetails(withNumber: number).then { cardDetails -> Void in
+
+            if cardDetails.valid == "true" {
+                self.validAnimation()
+            }
+
+            if cardDetails.valid == "false" {
+                self.invalidAnimation()
+            }
         }
     }
 
@@ -34,6 +48,21 @@ class MainViewController: UIViewController {
     // MARK: - Privates
 
     private let cardDetailsService: CardDetailsServiceProtocol
+
+    private func configureKeyboardAvoiding() {
+        KeyboardAvoiding.avoidingView = mainView.stackView
+        KeyboardAvoiding.paddingForCurrentAvoidingView = 10.0
+    }
+
+    // MARK: - Delegates
+
+    func validationButtonClicked(string: String) {
+        guard let stringAsInt = Int(string) else {
+            fatalError("String as integer failed")
+        }
+
+        fetchCardDetails(number: stringAsInt)
+    }
 
     // MARK: - Required initializer
 

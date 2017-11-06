@@ -85,5 +85,5 @@ class CommentsDeserializerSpec: QuickSpec {
                 }
             }
         }
-    
+
 }

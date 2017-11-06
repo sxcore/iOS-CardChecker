@@ -30,7 +30,7 @@ extension ValidationIndicatorViewType {
     var backgroundColor: UIColor {
         switch self {
         case .negative:
-            guard let redColor = UIColor("#17EAD9", alpha: 1.0) else {
+            guard let redColor = UIColor("#f90707", alpha: 1.0) else {
                 fatalError("Could not Fetch Red Color")
             }
             return redColor

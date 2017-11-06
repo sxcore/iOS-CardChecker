@@ -5,6 +5,7 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - HexColors (5.0.1)
+  - IHKeyboardAvoiding (4.1)
   - Nimble (7.0.2)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
@@ -12,16 +13,16 @@ PODS:
     - FBSnapshotTestCase (~> 2.0)
     - Nimble (~> 7.0)
   - Pastel (0.3.0)
-  - PromiseKit (4.4.3):
-    - PromiseKit/Foundation (= 4.4.3)
-    - PromiseKit/QuartzCore (= 4.4.3)
-    - PromiseKit/UIKit (= 4.4.3)
-  - PromiseKit/CorePromise (4.4.3)
-  - PromiseKit/Foundation (4.4.3):
+  - PromiseKit (4.5.0):
+    - PromiseKit/Foundation (= 4.5.0)
+    - PromiseKit/QuartzCore (= 4.5.0)
+    - PromiseKit/UIKit (= 4.5.0)
+  - PromiseKit/CorePromise (4.5.0)
+  - PromiseKit/Foundation (4.5.0):
     - PromiseKit/CorePromise
-  - PromiseKit/QuartzCore (4.4.3):
+  - PromiseKit/QuartzCore (4.5.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (4.4.3):
+  - PromiseKit/UIKit (4.5.0):
     - PromiseKit/CorePromise
   - Quick (1.2.0)
   - Reveal-SDK (11)
@@ -33,10 +34,11 @@ PODS:
 
 DEPENDENCIES:
   - HexColors (~> 5.0)
+  - IHKeyboardAvoiding (~> 4.1)
   - Nimble (~> 7.0)
   - Nimble-Snapshots (~> 6.3.0)
   - Pastel (~> 0.3)
-  - PromiseKit (~> 4.0)
+  - PromiseKit (~> 4.5.0)
   - Quick (~> 1.2)
   - Reveal-SDK
   - SnapKit (~> 4.0.0)
@@ -47,10 +49,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   HexColors: d642e696de77aa919584012e80bf62a4b099cee1
+  IHKeyboardAvoiding: 5f42b8ff1f64144ea425b1954e4311eb6bf9077a
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
-  PromiseKit: fbb52a0d154402c57eeb6eccd36dd7724fcf6117
+  PromiseKit: 9c1d9f6d7b65e3951a90bea7f407c56972be5d8e
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   Reveal-SDK: 7fa13d04bb55db61ff2342a990cf731d5159361d
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
@@ -58,6 +61,6 @@ SPEC CHECKSUMS:
   Swinject: afea49fd95f392b41171669f165842879c48fad6
   SwinjectAutoregistration: d06b56bd8f912b9fb9c59c15181342558a734b1b
 
-PODFILE CHECKSUM: b9853fb626889d362f5cc4540d1849d82e74fbff
+PODFILE CHECKSUM: 49fdd5d64250f4610bc997f4ca80a9c478e951a8
 
 COCOAPODS: 1.3.1

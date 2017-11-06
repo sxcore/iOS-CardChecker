@@ -31,8 +31,14 @@ class CardDetailsService: CardDetailsServiceProtocol {
                     fullfill(json)
                 } else if let error = error {
                     reject(error)
+                } else if let response = response {
+                    print(response)
+                } else if data != nil {
+                    let data = NSError()
+                    reject(data)
+                } else {
+                    reject(PMKError.invalidCallingConvention)
                 }
-
             }
             dataTask.resume()
         }
@@ -42,4 +48,5 @@ class CardDetailsService: CardDetailsServiceProtocol {
 
     private let APIKeyProvider: APIKeyProviding
     private let URLProvider: URLProviding
+
 }
