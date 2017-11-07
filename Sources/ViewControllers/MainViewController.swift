@@ -27,7 +27,8 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
 
     func fetchCardDetails(number: Int) {
             resetToPendingAnimation()
-        _ = cardDetailsService.fetchCardDetails(withNumber: number).then { cardDetails -> Void in
+        firstly { cardDetailsService.fetchCardDetails(withNumber: number)
+        }.then { cardDetails -> Void in
 
             if cardDetails.valid == "true" {
                 self.validAnimation()
@@ -58,7 +59,7 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
 
     func validationButtonClicked(string: String) {
         guard let stringAsInt = Int(string) else {
-            fatalError("String as integer failed")
+            fatalError("Casting string as integer failed")
         }
 
         fetchCardDetails(number: stringAsInt)
