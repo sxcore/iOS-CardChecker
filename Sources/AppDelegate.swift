@@ -30,4 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    func application(_ application: UIApplication,
+                     shouldAllowExtensionPointIdentifier
+                     extensionPointIdentifier: UIApplicationExtensionPointIdentifier) -> Bool {
+        if extensionPointIdentifier == UIApplicationExtensionPointIdentifier.keyboard {
+            return false
+        }
+        return true
+    }
+
 }

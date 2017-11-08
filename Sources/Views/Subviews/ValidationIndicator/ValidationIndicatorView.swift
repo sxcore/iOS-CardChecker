@@ -20,7 +20,7 @@ class ValidationIndicatorView: UIView {
 
     private let type: ValidationIndicatorViewType
     private let textAndIconView: UIView = Factory.textAndIconView()
-    private let messageLabel: UILabel = Factory.messageLabel()
+    internal let messageLabel: UILabel = Factory.messageLabel()
     private let statusImageView: UIImageView = Factory.statusImageView()
 
     private func addSubviews() {
