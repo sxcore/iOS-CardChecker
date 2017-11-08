@@ -4,10 +4,14 @@ extension CreditCardControlView {
 
     struct Factory {
 
-        static func creditCardNumberTextField() -> UITextField {
-            let creditCardNumberTextField = UITextField()
+        static func creditCardNumberTextField() -> CreditCardNumberTextField {
+            let creditCardNumberTextField = CreditCardNumberTextField()
             creditCardNumberTextField.placeholder = "1234 1234 1234 1234"
             creditCardNumberTextField.keyboardType = .numberPad
+            creditCardNumberTextField.returnKeyType = .done
+            creditCardNumberTextField.autocorrectionType = .no
+            creditCardNumberTextField.autocapitalizationType = .none
+            creditCardNumberTextField.font = UIFont(name: "HelveticaNeue-Thin", size: 14)
             return creditCardNumberTextField
         }
 
@@ -18,6 +22,7 @@ extension CreditCardControlView {
             dateNumberTextField.returnKeyType = .done
             dateNumberTextField.autocorrectionType = .no
             dateNumberTextField.autocapitalizationType = .none
+            dateNumberTextField.font = UIFont(name: "HelveticaNeue-Thin", size: 14)
             return dateNumberTextField
         }
 
@@ -28,6 +33,7 @@ extension CreditCardControlView {
             aCVCNumberTextField.returnKeyType = .done
             aCVCNumberTextField.autocorrectionType = .no
             aCVCNumberTextField.autocapitalizationType = .none
+            aCVCNumberTextField.font = UIFont(name: "HelveticaNeue-Thin", size: 14)
             return aCVCNumberTextField
         }
     }
