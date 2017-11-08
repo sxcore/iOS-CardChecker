@@ -32,7 +32,7 @@
 		50B5A7AD1FAC418D00013434 /* ValidationIndicatorView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A7AC1FAC418D00013434 /* ValidationIndicatorView+Factory.swift */; };
 		50DB217E1FB0251700F5FDA1 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB217D1FB0251700F5FDA1 /* ErrorModel.swift */; };
 		50DB21801FB0401C00F5FDA1 /* MainViewController+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB217F1FB0401C00F5FDA1 /* MainViewController+Validations.swift */; };
-		50DB21821FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21811FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift */; };
+		50DB21821FB04C0900F5FDA1 /* UITextField+GenerateCCNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21811FB04C0900F5FDA1 /* UITextField+GenerateCCNumber.swift */; };
 		50DB21841FB293A600F5FDA1 /* CardDetailsService+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21831FB293A600F5FDA1 /* CardDetailsService+Download.swift */; };
 		50DB21861FB2AD2700F5FDA1 /* MainView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21851FB2AD2700F5FDA1 /* MainView+Autolayout.swift */; };
 		50DB218A1FB2BEDA00F5FDA1 /* MainViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21891FB2BEDA00F5FDA1 /* MainViewController+Delegates.swift */; };
@@ -95,7 +95,7 @@
 		50B5A7AC1FAC418D00013434 /* ValidationIndicatorView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ValidationIndicatorView+Factory.swift"; sourceTree = "<group>"; };
 		50DB217D1FB0251700F5FDA1 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		50DB217F1FB0401C00F5FDA1 /* MainViewController+Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Validations.swift"; sourceTree = "<group>"; };
-		50DB21811FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardNumberGenerator.swift; sourceTree = "<group>"; };
+		50DB21811FB04C0900F5FDA1 /* UITextField+GenerateCCNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+GenerateCCNumber.swift"; sourceTree = "<group>"; };
 		50DB21831FB293A600F5FDA1 /* CardDetailsService+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDetailsService+Download.swift"; sourceTree = "<group>"; };
 		50DB21851FB2AD2700F5FDA1 /* MainView+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Autolayout.swift"; sourceTree = "<group>"; };
 		50DB21891FB2BEDA00F5FDA1 /* MainViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Delegates.swift"; sourceTree = "<group>"; };
@@ -179,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				501DF94D1FAC9D8D0075A3EE /* CardDetails.swift */,
-				50DB21811FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift */,
 				50DB217D1FB0251700F5FDA1 /* ErrorModel.swift */,
 			);
 			path = Models;
@@ -238,6 +237,7 @@
 				50474DD81FAB61BD00906551 /* ForceCast.swift */,
 				50DB21961FB2F68D00F5FDA1 /* String+RemoveSeparator.swift */,
 				50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */,
+				50DB21811FB04C0900F5FDA1 /* UITextField+GenerateCCNumber.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -691,7 +691,7 @@
 				50DB218A1FB2BEDA00F5FDA1 /* MainViewController+Delegates.swift in Sources */,
 				5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */,
 				50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */,
-				50DB21821FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift in Sources */,
+				50DB21821FB04C0900F5FDA1 /* UITextField+GenerateCCNumber.swift in Sources */,
 				50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */,
 				50B5A79E1FAC290C00013434 /* CustomButton.swift in Sources */,
 				50DB21911FB2E96900F5FDA1 /* CVCTextField.swift in Sources */,

@@ -11,7 +11,7 @@ internal func configureAutolayout() {
     }
 
     containerView.snp.makeConstraints { make -> Void in
-        make.height.equalTo(50)
+        make.height.greaterThanOrEqualTo(80)
         make.left.equalToSuperview().offset(5)
         make.right.equalToSuperview().offset(-5)
     }
