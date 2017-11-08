@@ -22,6 +22,9 @@ extension CreditCardControlView {
             let aCVCNumberTextField = CVCTextField()
             aCVCNumberTextField.placeholder = "123"
             aCVCNumberTextField.keyboardType = .numberPad
+            aCVCNumberTextField.returnKeyType = .done
+            aCVCNumberTextField.autocorrectionType = .no
+            aCVCNumberTextField.autocapitalizationType = .none
             return aCVCNumberTextField
         }
     }

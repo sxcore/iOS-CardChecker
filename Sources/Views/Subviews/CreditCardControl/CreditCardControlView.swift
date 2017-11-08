@@ -5,7 +5,7 @@ class CreditCardControlView: UIView {
 
     let creditCardNumberTextField: UITextField = Factory.creditCardNumberTextField()
     let dateNumberTextField: UITextField = Factory.dateNumberTextField()
-    let aCVCNumberTextField: UITextField = Factory.aCVCNumberTextField()
+    let aCVCNumberTextField: CVCTextField = Factory.aCVCNumberTextField()
 
     init() {
         super.init(frame: .zero)
@@ -20,7 +20,6 @@ class CreditCardControlView: UIView {
     private func setupDelegates() {
         creditCardNumberTextField.delegate = self
         dateNumberTextField.delegate = self
-        aCVCNumberTextField.delegate = self
     }
 
     private func addSubviews() {
