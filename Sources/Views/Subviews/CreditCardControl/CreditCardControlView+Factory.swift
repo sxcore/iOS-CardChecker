@@ -18,10 +18,13 @@ extension CreditCardControlView {
             return dateNumberTextField
         }
 
-        static func aCVCNumberTextField() -> UITextField {
-            let aCVCNumberTextField = UITextField()
+        static func aCVCNumberTextField() -> CVCTextField {
+            let aCVCNumberTextField = CVCTextField()
             aCVCNumberTextField.placeholder = "123"
             aCVCNumberTextField.keyboardType = .numberPad
+            aCVCNumberTextField.returnKeyType = .done
+            aCVCNumberTextField.autocorrectionType = .no
+            aCVCNumberTextField.autocapitalizationType = .none
             return aCVCNumberTextField
         }
     }
