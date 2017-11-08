@@ -1,5 +1,5 @@
 extension String {
-    static func insertSeparator(_ intoString: String) -> String {
+    public static func insertSeparator(_ intoString: String) -> String {
         let charChunk: Int = 4
         let separator: String = " "
         var output = ""

@@ -51,7 +51,6 @@ class CreditCardNumberTextField: UITextField, UITextFieldDelegate {
         return true
     }
 
-
     // MARK: - Required Init
 
     required init?(coder aDecoder: NSCoder) {

@@ -59,7 +59,9 @@ func generateCreditCardNumber(for type: CreditCardType) -> String {
 
     public func generate() {
         let creditCardType = CreditCardType(rawValue: random(begin: 0, end: 1)) ?? .visa
-        self.text = generateCreditCardNumber(for: creditCardType)
+        let creditCardNumberText = generateCreditCardNumber(for: creditCardType)
+        let separatedText = String.insertSeparator(creditCardNumberText)
+        self.text = separatedText
     }
 
 }
