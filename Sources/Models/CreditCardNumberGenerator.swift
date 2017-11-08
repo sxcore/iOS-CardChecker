@@ -57,9 +57,9 @@ func generateCreditCardNumber(for type: CreditCardType) -> String {
         return Int(arc4random_uniform(end - begin + 1) + begin)
     }
 
-    public func generate() -> String {
+    public func generate() {
         let creditCardType = CreditCardType(rawValue: random(begin: 0, end: 1)) ?? .visa
-        return generateCreditCardNumber(for: creditCardType)
+        self.text = generateCreditCardNumber(for: creditCardType)
     }
 
 }

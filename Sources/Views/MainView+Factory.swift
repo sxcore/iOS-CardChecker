@@ -44,6 +44,7 @@ extension MainView {
         static func generateButton() -> CustomButton {
             let generateButton = CustomButton()
             generateButton.setTitle("Generate Random Credit Card Code", for: .normal)
+            generateButton.addTarget(self, action: #selector(didTapGenerateButton), for: .touchUpInside)
             generateButton.backgroundColor = #colorLiteral(red: 1, green: 0.4932718873, blue: 0.4739984274, alpha: 1)
             return generateButton
         }

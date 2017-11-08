@@ -105,6 +105,12 @@ public class MainView: UIView {
     }
 
     @objc
+    func didTapGenerateButton() {
+        endEditing(true)
+        self.creditCardControlView.creditCardNumberTextField.generate()
+    }
+
+    @objc
     func didTapValidateButton() {
         endEditing(true)
 
