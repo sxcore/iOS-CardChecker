@@ -40,8 +40,18 @@
 		50DB21911FB2E96900F5FDA1 /* CVCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21901FB2E96900F5FDA1 /* CVCTextField.swift */; };
 		50DB21931FB2EDBB00F5FDA1 /* DateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21921FB2EDBB00F5FDA1 /* DateTextField.swift */; };
 		50DB21951FB2F0D500F5FDA1 /* CreditCardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21941FB2F0D500F5FDA1 /* CreditCardNumberTextField.swift */; };
-		50DB21971FB2F68D00F5FDA1 /* String+RemoveSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21961FB2F68D00F5FDA1 /* String+RemoveSeparator.swift */; };
+		50DB21971FB2F68D00F5FDA1 /* String+InsertSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21961FB2F68D00F5FDA1 /* String+InsertSeparator.swift */; };
 		50DB21991FB2FF8400F5FDA1 /* CreditCardControlView+Responders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21981FB2FF8400F5FDA1 /* CreditCardControlView+Responders.swift */; };
+		50DB21A21FB30A1100F5FDA1 /* MainViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21A11FB30A1100F5FDA1 /* MainViewControllerSpec.swift */; };
+		50DB21A51FB30BC400F5FDA1 /* CardDetailsServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21A41FB30BC400F5FDA1 /* CardDetailsServiceStub.swift */; };
+		50DB21A81FB30C6800F5FDA1 /* MainViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21A71FB30C6800F5FDA1 /* MainViewControllerMock.swift */; };
+		50DB21AA1FB312A800F5FDA1 /* String_InsertSeparatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21A91FB312A800F5FDA1 /* String_InsertSeparatorSpec.swift */; };
+		50DB21AD1FB3160900F5FDA1 /* CardDetailsServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21AC1FB3160900F5FDA1 /* CardDetailsServiceSpec.swift */; };
+		50DB21B01FB3177100F5FDA1 /* CardDetailsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21AF1FB3177100F5FDA1 /* CardDetailsSpec.swift */; };
+		50DB21B21FB3177E00F5FDA1 /* ErrorModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21B11FB3177E00F5FDA1 /* ErrorModelSpec.swift */; };
+		50DB21B81FB335A400F5FDA1 /* CVCTextFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21B71FB335A400F5FDA1 /* CVCTextFieldSpec.swift */; };
+		50DB21BA1FB33AD300F5FDA1 /* DateTextFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21B91FB33AD300F5FDA1 /* DateTextFieldSpec.swift */; };
+		50DB21BC1FB33C5F00F5FDA1 /* CreditCardNumberTextFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21BB1FB33C5F00F5FDA1 /* CreditCardNumberTextFieldSpec.swift */; };
 		50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */; };
 		50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C051FABBAA800640B34 /* MainView+Factory.swift */; };
 		50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */; };
@@ -103,8 +113,18 @@
 		50DB21901FB2E96900F5FDA1 /* CVCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCTextField.swift; sourceTree = "<group>"; };
 		50DB21921FB2EDBB00F5FDA1 /* DateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextField.swift; sourceTree = "<group>"; };
 		50DB21941FB2F0D500F5FDA1 /* CreditCardNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardNumberTextField.swift; sourceTree = "<group>"; };
-		50DB21961FB2F68D00F5FDA1 /* String+RemoveSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+RemoveSeparator.swift"; sourceTree = "<group>"; };
+		50DB21961FB2F68D00F5FDA1 /* String+InsertSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+InsertSeparator.swift"; sourceTree = "<group>"; };
 		50DB21981FB2FF8400F5FDA1 /* CreditCardControlView+Responders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreditCardControlView+Responders.swift"; sourceTree = "<group>"; };
+		50DB21A11FB30A1100F5FDA1 /* MainViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerSpec.swift; sourceTree = "<group>"; };
+		50DB21A41FB30BC400F5FDA1 /* CardDetailsServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsServiceStub.swift; sourceTree = "<group>"; };
+		50DB21A71FB30C6800F5FDA1 /* MainViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerMock.swift; sourceTree = "<group>"; };
+		50DB21A91FB312A800F5FDA1 /* String_InsertSeparatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_InsertSeparatorSpec.swift; sourceTree = "<group>"; };
+		50DB21AC1FB3160900F5FDA1 /* CardDetailsServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsServiceSpec.swift; sourceTree = "<group>"; };
+		50DB21AF1FB3177100F5FDA1 /* CardDetailsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsSpec.swift; sourceTree = "<group>"; };
+		50DB21B11FB3177E00F5FDA1 /* ErrorModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModelSpec.swift; sourceTree = "<group>"; };
+		50DB21B71FB335A400F5FDA1 /* CVCTextFieldSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCTextFieldSpec.swift; sourceTree = "<group>"; };
+		50DB21B91FB33AD300F5FDA1 /* DateTextFieldSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextFieldSpec.swift; sourceTree = "<group>"; };
+		50DB21BB1FB33C5F00F5FDA1 /* CreditCardNumberTextFieldSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardNumberTextFieldSpec.swift; sourceTree = "<group>"; };
 		50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardControlView.swift; sourceTree = "<group>"; };
 		50EA7C051FABBAA800640B34 /* MainView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Factory.swift"; sourceTree = "<group>"; };
 		50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreditCardControlView+Factory.swift"; sourceTree = "<group>"; };
@@ -197,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				501DF9591FACA54E0075A3EE /* Deserialization */,
+				50DB21AB1FB315E600F5FDA1 /* Services */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -235,7 +256,7 @@
 				50DB219C1FB3018500F5FDA1 /* ValidationIndicatorView */,
 				50DB21831FB293A600F5FDA1 /* CardDetailsService+Download.swift */,
 				50474DD81FAB61BD00906551 /* ForceCast.swift */,
-				50DB21961FB2F68D00F5FDA1 /* String+RemoveSeparator.swift */,
+				50DB21961FB2F68D00F5FDA1 /* String+InsertSeparator.swift */,
 				50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */,
 				50DB21811FB04C0900F5FDA1 /* UITextField+GenerateCCNumber.swift */,
 			);
@@ -246,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				50474DDB1FAB66ED00906551 /* ForceCastTests.swift */,
+				50DB21A91FB312A800F5FDA1 /* String_InsertSeparatorSpec.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,8 +310,13 @@
 		505F5EE11FAA29810093380D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				50DB21A01FB309E700F5FDA1 /* Controllers */,
 				50474DDA1FAB66DA00906551 /* Extensions */,
+				50DB21A61FB30C5E00F5FDA1 /* Mocks */,
+				50DB21AE1FB3175100F5FDA1 /* Models */,
 				501DF9581FACA5450075A3EE /* Networking */,
+				50DB21A31FB30B8E00F5FDA1 /* Stubs */,
+				50DB21B31FB3355C00F5FDA1 /* Views */,
 				5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */,
 				505F5EE41FAA29810093380D /* Info.plist */,
 			);
@@ -374,6 +401,81 @@
 				50B5A7A71FAC3D2D00013434 /* ValidationIndicatorView+Type.swift */,
 			);
 			path = ValidationIndicatorView;
+			sourceTree = "<group>";
+		};
+		50DB21A01FB309E700F5FDA1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21A11FB30A1100F5FDA1 /* MainViewControllerSpec.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		50DB21A31FB30B8E00F5FDA1 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21A41FB30BC400F5FDA1 /* CardDetailsServiceStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		50DB21A61FB30C5E00F5FDA1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21A71FB30C6800F5FDA1 /* MainViewControllerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		50DB21AB1FB315E600F5FDA1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21AC1FB3160900F5FDA1 /* CardDetailsServiceSpec.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		50DB21AE1FB3175100F5FDA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21AF1FB3177100F5FDA1 /* CardDetailsSpec.swift */,
+				50DB21B11FB3177E00F5FDA1 /* ErrorModelSpec.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50DB21B31FB3355C00F5FDA1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21B41FB3356800F5FDA1 /* Subviews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50DB21B41FB3356800F5FDA1 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21B51FB3357B00F5FDA1 /* CreditCardControl */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		50DB21B51FB3357B00F5FDA1 /* CreditCardControl */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21B61FB3358B00F5FDA1 /* TextFields */,
+			);
+			path = CreditCardControl;
+			sourceTree = "<group>";
+		};
+		50DB21B61FB3358B00F5FDA1 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21B71FB335A400F5FDA1 /* CVCTextFieldSpec.swift */,
+				50DB21BB1FB33C5F00F5FDA1 /* CreditCardNumberTextFieldSpec.swift */,
+				50DB21B91FB33AD300F5FDA1 /* DateTextFieldSpec.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 		50EA7C0B1FAC05D300640B34 /* Subviews */ = {
@@ -684,7 +786,7 @@
 				50B5A7A21FAC2FB200013434 /* BackgroundView.swift in Sources */,
 				50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */,
 				50DB21841FB293A600F5FDA1 /* CardDetailsService+Download.swift in Sources */,
-				50DB21971FB2F68D00F5FDA1 /* String+RemoveSeparator.swift in Sources */,
+				50DB21971FB2F68D00F5FDA1 /* String+InsertSeparator.swift in Sources */,
 				50DB217E1FB0251700F5FDA1 /* ErrorModel.swift in Sources */,
 				50DB21861FB2AD2700F5FDA1 /* MainView+Autolayout.swift in Sources */,
 				50EA7C0A1FABC87A00640B34 /* ValidationIndicatorView.swift in Sources */,
@@ -712,9 +814,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DB21BA1FB33AD300F5FDA1 /* DateTextFieldSpec.swift in Sources */,
+				50DB21A51FB30BC400F5FDA1 /* CardDetailsServiceStub.swift in Sources */,
+				50DB21BC1FB33C5F00F5FDA1 /* CreditCardNumberTextFieldSpec.swift in Sources */,
+				50DB21AA1FB312A800F5FDA1 /* String_InsertSeparatorSpec.swift in Sources */,
+				50DB21A81FB30C6800F5FDA1 /* MainViewControllerMock.swift in Sources */,
+				50DB21AD1FB3160900F5FDA1 /* CardDetailsServiceSpec.swift in Sources */,
 				50F616921FAB68860093D23E /* ForceCastTests.swift in Sources */,
 				5003CB3A1FAAC1B200D07085 /* AppDelegateSpec.swift in Sources */,
+				50DB21A21FB30A1100F5FDA1 /* MainViewControllerSpec.swift in Sources */,
 				501DF95B1FACA57F0075A3EE /* CardDetailsDeserializerSpec.swift in Sources */,
+				50DB21B01FB3177100F5FDA1 /* CardDetailsSpec.swift in Sources */,
+				50DB21B81FB335A400F5FDA1 /* CVCTextFieldSpec.swift in Sources */,
+				50DB21B21FB3177E00F5FDA1 /* ErrorModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
