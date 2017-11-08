@@ -1,15 +1,7 @@
 import IHKeyboardAvoiding
-import PromiseKit
 import UIKit
 
 class MainViewController: UIViewController, CreditCardNumberDelegate {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        configureKeyboardAvoiding()
-        resetToPendingAnimation()
-    }
 
     // MARK: - Initializer
 
@@ -25,10 +17,16 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
         view = MainView()
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        configureKeyboardAvoiding()
+        resetToPendingAnimation()
+    }
+
     func fetchCardDetails(number: Int) {
             resetToPendingAnimation()
-        _ = cardDetailsService.fetchCardDetails(withNumber: number).then { cardDetails -> Void in
-
+        cardDetailsService.fetchCardDetails(creditCard: number, block: { cardDetails in
             if cardDetails.valid == "true" {
                 self.validAnimation()
             }
@@ -36,10 +34,28 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
             if cardDetails.valid == "false" {
                 self.invalidAnimation()
             }
-        }
+        }, error: { error in
+            DispatchQueue.main.async {
+                self.invalidAnimation()
+                self.mainView.validationNegativeView.messageLabel.text = error.localizedDescription
+            }
+        })
+
     }
 
-     var mainView: MainView { return forceCast(view) }
+    // MARK: - Delegates
+
+    func validationButtonClicked(string: String) {
+        if !string.isEmpty {
+        guard let stringAsInt = Int(string) else {
+            fatalError("Casting string as integer failed")
+        }
+
+            fetchCardDetails(number: stringAsInt)
+        } else {
+            presentAlertView()
+        }
+    }
 
     // MARK: - ControllerProviding
 
@@ -54,15 +70,17 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
         KeyboardAvoiding.paddingForCurrentAvoidingView = 10.0
     }
 
-    // MARK: - Delegates
-
-    func validationButtonClicked(string: String) {
-        guard let stringAsInt = Int(string) else {
-            fatalError("String as integer failed")
-        }
-
-        fetchCardDetails(number: stringAsInt)
+    private func presentAlertView() {
+        let alert = UIAlertController(title: "No Input!",
+                                      message: "Input Cannot be empty",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
+
+    // MARK: - View Configuration
+
+    var mainView: MainView { return forceCast(view) }
 
     // MARK: - Required initializer
 
