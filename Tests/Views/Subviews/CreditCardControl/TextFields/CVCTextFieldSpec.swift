@@ -5,7 +5,7 @@ import Quick
 class CVCTextFieldSpec: QuickSpec {
 
     override func spec() {
-        describe("CVVTextFieldSpec") {
+        describe("CVCTextFieldSpec") {
             var sut: CVCTextField!
 
             beforeEach {
