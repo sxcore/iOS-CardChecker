@@ -11,10 +11,13 @@ extension CreditCardControlView {
             return creditCardNumberTextField
         }
 
-        static func dateNumberTextField() -> UITextField {
-            let dateNumberTextField = UITextField()
+        static func dateNumberTextField() -> DateTextField {
+            let dateNumberTextField = DateTextField()
             dateNumberTextField.placeholder = "01/02"
             dateNumberTextField.keyboardType = .numberPad
+            dateNumberTextField.returnKeyType = .done
+            dateNumberTextField.autocorrectionType = .no
+            dateNumberTextField.autocapitalizationType = .none
             return dateNumberTextField
         }
 
