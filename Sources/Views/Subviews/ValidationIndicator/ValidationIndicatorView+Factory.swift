@@ -9,6 +9,8 @@ extension ValidationIndicatorView {
             messageLabel.textAlignment = .left
             messageLabel.textColor = UIColor.white
             messageLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 17.0)
+            messageLabel.lineBreakMode = .byWordWrapping
+            messageLabel.numberOfLines = 0
             return messageLabel
         }
 
