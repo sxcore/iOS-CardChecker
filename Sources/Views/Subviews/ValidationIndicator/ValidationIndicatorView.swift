@@ -41,8 +41,7 @@ class ValidationIndicatorView: UIView {
         }
 
         messageLabel.snp.makeConstraints { make -> Void in
-            make.centerY.equalToSuperview()
-            make.left.equalToSuperview()
+            make.top.bottom.left.equalToSuperview()
             make.right.equalTo(statusImageView.snp.left).offset(-10)
         }
 
