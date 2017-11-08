@@ -222,12 +222,10 @@
 		50474DD71FAB61A500906551 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				50DB218D1FB2C17400F5FDA1 /* MainViewController */,
 				50DB21831FB293A600F5FDA1 /* CardDetailsService+Download.swift */,
 				50474DD81FAB61BD00906551 /* ForceCast.swift */,
 				50150E231FB0019600BC08B2 /* MainView+UITextFieldDelegate.swift */,
-				50DB21891FB2BEDA00F5FDA1 /* MainViewController+Delegates.swift */,
-				50DB218B1FB2BFE300F5FDA1 /* MainViewController+Service.swift */,
-				50DB217F1FB0401C00F5FDA1 /* MainViewController+Validations.swift */,
 				50B5A79F1FAC2B4900013434 /* UIImage+FromColor.swift */,
 			);
 			path = Extensions;
@@ -322,6 +320,16 @@
 				50B5A7A11FAC2FB200013434 /* BackgroundView.swift */,
 			);
 			path = BackgroundView;
+			sourceTree = "<group>";
+		};
+		50DB218D1FB2C17400F5FDA1 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21891FB2BEDA00F5FDA1 /* MainViewController+Delegates.swift */,
+				50DB218B1FB2BFE300F5FDA1 /* MainViewController+Service.swift */,
+				50DB217F1FB0401C00F5FDA1 /* MainViewController+Validations.swift */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		50EA7C0B1FAC05D300640B34 /* Subviews */ = {
