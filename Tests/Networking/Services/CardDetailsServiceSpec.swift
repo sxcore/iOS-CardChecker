@@ -6,7 +6,7 @@ class CardDetailsServiceSpec: QuickSpec {
 
     override func spec() {
         describe("CardDetailsServiceSpec") {
-            
+
         }
     }
 }
