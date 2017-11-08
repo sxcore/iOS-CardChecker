@@ -1,7 +1,7 @@
 import IHKeyboardAvoiding
 import UIKit
 
-class MainViewController: UIViewController, CreditCardNumberDelegate {
+class MainViewController: UIViewController {
 
     // MARK: - Initializer
 
@@ -24,40 +24,7 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
         resetToPendingAnimation()
     }
 
-    func fetchCardDetails(number: Int) {
-            resetToPendingAnimation()
-        cardDetailsService.fetchCardDetails(creditCard: number, block: { cardDetails in
-
-            DispatchQueue.main.async {
-            if cardDetails.valid == "true" {
-                self.validAnimation()
-            }
-
-            if cardDetails.valid == "false" {
-                self.invalidAnimation()
-           }}
-        }, error: { error in
-            DispatchQueue.main.async {
-                self.invalidAnimation()
-                self.mainView.validationNegativeView.messageLabel.text = error.localizedDescription
-            }
-        })
-
-    }
-
-    // MARK: - Delegates
-
-    func validationButtonClicked(string: String) {
-        if !string.isEmpty {
-        guard let stringAsInt = Int(string) else {
-            fatalError("Casting string as integer failed")
-        }
-
-            fetchCardDetails(number: stringAsInt)
-        } else {
-            presentAlertView()
-        }
-    }
+     let cardDetailsService: CardDetailsServiceProtocol
 
     // MARK: - ControllerProviding
 
@@ -65,19 +32,9 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
 
     // MARK: - Privates
 
-    private let cardDetailsService: CardDetailsServiceProtocol
-
     private func configureKeyboardAvoiding() {
         KeyboardAvoiding.avoidingView = mainView.stackView
         KeyboardAvoiding.paddingForCurrentAvoidingView = 10.0
-    }
-
-    private func presentAlertView() {
-        let alert = UIAlertController(title: "No Input!",
-                                      message: "Input Cannot be empty",
-                                      preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
     }
 
     // MARK: - View Configuration

@@ -1,4 +1,5 @@
 extension MainViewController {
+
    internal func invalidAnimation() {
         mainView.validationPendingView.isHidden = true
         mainView.validationPositiveView.isHidden = true
