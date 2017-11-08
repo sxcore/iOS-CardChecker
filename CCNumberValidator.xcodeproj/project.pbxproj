@@ -33,7 +33,9 @@
 		50B5A7AD1FAC418D00013434 /* ValidationIndicatorView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5A7AC1FAC418D00013434 /* ValidationIndicatorView+Factory.swift */; };
 		50DB217E1FB0251700F5FDA1 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB217D1FB0251700F5FDA1 /* ErrorModel.swift */; };
 		50DB21801FB0401C00F5FDA1 /* MainViewController+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB217F1FB0401C00F5FDA1 /* MainViewController+Validations.swift */; };
+		50DB21821FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21811FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift */; };
 		50DB21841FB293A600F5FDA1 /* CardDetailsService+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21831FB293A600F5FDA1 /* CardDetailsService+Download.swift */; };
+		50DB21861FB2AD2700F5FDA1 /* MainView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB21851FB2AD2700F5FDA1 /* MainView+Autolayout.swift */; };
 		50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */; };
 		50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C051FABBAA800640B34 /* MainView+Factory.swift */; };
 		50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */; };
@@ -88,7 +90,9 @@
 		50B5A7AC1FAC418D00013434 /* ValidationIndicatorView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ValidationIndicatorView+Factory.swift"; sourceTree = "<group>"; };
 		50DB217D1FB0251700F5FDA1 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		50DB217F1FB0401C00F5FDA1 /* MainViewController+Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Validations.swift"; sourceTree = "<group>"; };
+		50DB21811FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardNumberGenerator.swift; sourceTree = "<group>"; };
 		50DB21831FB293A600F5FDA1 /* CardDetailsService+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDetailsService+Download.swift"; sourceTree = "<group>"; };
+		50DB21851FB2AD2700F5FDA1 /* MainView+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Autolayout.swift"; sourceTree = "<group>"; };
 		50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardControlView.swift; sourceTree = "<group>"; };
 		50EA7C051FABBAA800640B34 /* MainView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Factory.swift"; sourceTree = "<group>"; };
 		50EA7C071FABBB2D00640B34 /* CreditCardControlView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreditCardControlView+Factory.swift"; sourceTree = "<group>"; };
@@ -138,7 +142,7 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		5003CB341FAABE7400D07085 /* Dependecy Injection */ = {
+		5003CB341FAABE7400D07085 /* Dependency Injection */ = {
 			isa = PBXGroup;
 			children = (
 				5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */,
@@ -146,16 +150,15 @@
 				505DCF691FAF4D960028D880 /* ProvidersAssemply.swift */,
 				505DCF6B1FAF4E5F0028D880 /* ServicesAssembly.swift */,
 			);
-			path = "Dependecy Injection";
+			path = "Dependency Injection";
 			sourceTree = "<group>";
 		};
 		5003CB3D1FAAC38900D07085 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				50DB21881FB2B0ED00F5FDA1 /* BackgroundView */,
+				50DB21871FB2B0E600F5FDA1 /* MainView */,
 				50EA7C0B1FAC05D300640B34 /* Subviews */,
-				50B5A7A11FAC2FB200013434 /* BackgroundView.swift */,
-				50EA7C051FABBAA800640B34 /* MainView+Factory.swift */,
-				5003CB3B1FAAC2AB00D07085 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				501DF94D1FAC9D8D0075A3EE /* CardDetails.swift */,
+				50DB21811FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift */,
 				50DB217D1FB0251700F5FDA1 /* ErrorModel.swift */,
 			);
 			path = Models;
@@ -255,7 +259,7 @@
 		505F5ECC1FAA29810093380D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				5003CB341FAABE7400D07085 /* Dependecy Injection */,
+				5003CB341FAABE7400D07085 /* Dependency Injection */,
 				50474DD71FAB61A500906551 /* Extensions */,
 				501DF94C1FAC9D750075A3EE /* Models */,
 				501DF9521FACA3090075A3EE /* Networking */,
@@ -294,6 +298,24 @@
 				50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */,
 			);
 			path = CreditCardControl;
+			sourceTree = "<group>";
+		};
+		50DB21871FB2B0E600F5FDA1 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21851FB2AD2700F5FDA1 /* MainView+Autolayout.swift */,
+				50EA7C051FABBAA800640B34 /* MainView+Factory.swift */,
+				5003CB3B1FAAC2AB00D07085 /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		50DB21881FB2B0ED00F5FDA1 /* BackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				50B5A7A11FAC2FB200013434 /* BackgroundView.swift */,
+			);
+			path = BackgroundView;
 			sourceTree = "<group>";
 		};
 		50EA7C0B1FAC05D300640B34 /* Subviews */ = {
@@ -603,10 +625,12 @@
 				50EA7C081FABBB2D00640B34 /* CreditCardControlView+Factory.swift in Sources */,
 				50DB21841FB293A600F5FDA1 /* CardDetailsService+Download.swift in Sources */,
 				50DB217E1FB0251700F5FDA1 /* ErrorModel.swift in Sources */,
+				50DB21861FB2AD2700F5FDA1 /* MainView+Autolayout.swift in Sources */,
 				50EA7C0A1FABC87A00640B34 /* ValidationIndicatorView.swift in Sources */,
 				50150E241FB0019600BC08B2 /* MainView+UITextFieldDelegate.swift in Sources */,
 				5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */,
 				50E4AC371FAB825F00D4B90D /* CreditCardControlView.swift in Sources */,
+				50DB21821FB04C0900F5FDA1 /* CreditCardNumberGenerator.swift in Sources */,
 				50EA7C061FABBAA800640B34 /* MainView+Factory.swift in Sources */,
 				50B5A79E1FAC290C00013434 /* CustomButton.swift in Sources */,
 				5003CB3C1FAAC2AB00D07085 /* MainView.swift in Sources */,
