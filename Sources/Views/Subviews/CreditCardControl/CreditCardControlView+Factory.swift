@@ -4,10 +4,13 @@ extension CreditCardControlView {
 
     struct Factory {
 
-        static func creditCardNumberTextField() -> UITextField {
-            let creditCardNumberTextField = UITextField()
+        static func creditCardNumberTextField() -> CreditCardNumberTextField {
+            let creditCardNumberTextField = CreditCardNumberTextField()
             creditCardNumberTextField.placeholder = "1234 1234 1234 1234"
             creditCardNumberTextField.keyboardType = .numberPad
+            creditCardNumberTextField.returnKeyType = .done
+            creditCardNumberTextField.autocorrectionType = .no
+            creditCardNumberTextField.autocapitalizationType = .none
             return creditCardNumberTextField
         }
 

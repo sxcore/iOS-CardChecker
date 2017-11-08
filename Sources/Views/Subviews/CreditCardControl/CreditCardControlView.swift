@@ -3,7 +3,7 @@ import UIKit
 
 class CreditCardControlView: UIView {
 
-    let creditCardNumberTextField: UITextField = Factory.creditCardNumberTextField()
+    let creditCardNumberTextField: CreditCardNumberTextField = Factory.creditCardNumberTextField()
     let dateNumberTextField: DateTextField = Factory.dateNumberTextField()
     let aCVCNumberTextField: CVCTextField = Factory.aCVCNumberTextField()
 
@@ -12,13 +12,8 @@ class CreditCardControlView: UIView {
 
         backgroundColor = UIColor.white
 
-        setupDelegates()
         addSubviews()
         configureAutolayout()
-    }
-
-    private func setupDelegates() {
-        creditCardNumberTextField.delegate = self
     }
 
     private func addSubviews() {
