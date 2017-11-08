@@ -216,8 +216,8 @@
 		501DF9581FACA5450075A3EE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				50DB21AB1FB315E600F5FDA1 /* Services */,
 				501DF9591FACA54E0075A3EE /* Deserialization */,
+				50DB21AB1FB315E600F5FDA1 /* Services */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -310,13 +310,13 @@
 		505F5EE11FAA29810093380D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				50DB21B31FB3355C00F5FDA1 /* Views */,
-				50DB21AE1FB3175100F5FDA1 /* Models */,
 				50DB21A01FB309E700F5FDA1 /* Controllers */,
 				50474DDA1FAB66DA00906551 /* Extensions */,
 				50DB21A61FB30C5E00F5FDA1 /* Mocks */,
+				50DB21AE1FB3175100F5FDA1 /* Models */,
 				501DF9581FACA5450075A3EE /* Networking */,
 				50DB21A31FB30B8E00F5FDA1 /* Stubs */,
+				50DB21B31FB3355C00F5FDA1 /* Views */,
 				5003CB391FAAC1B200D07085 /* AppDelegateSpec.swift */,
 				505F5EE41FAA29810093380D /* Info.plist */,
 			);
@@ -472,8 +472,8 @@
 			isa = PBXGroup;
 			children = (
 				50DB21B71FB335A400F5FDA1 /* CVCTextFieldSpec.swift */,
-				50DB21B91FB33AD300F5FDA1 /* DateTextFieldSpec.swift */,
 				50DB21BB1FB33C5F00F5FDA1 /* CreditCardNumberTextFieldSpec.swift */,
+				50DB21B91FB33AD300F5FDA1 /* DateTextFieldSpec.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
