@@ -1,11 +1,11 @@
 import Foundation
 import UIKit
 
-enum CreditCardType : UInt32 {
-    case visa
-    case masterCard
-    case discover
-    case americanExpress
+enum CreditCardType: Int {
+    case visa = 0
+    case masterCard = 1
+    case discover = 2
+    case americanExpress = 3
 }
 
 extension UITextField {
@@ -51,6 +51,15 @@ func generateCreditCardNumber(for type: CreditCardType) -> String {
 
     return cardNumber.map({ String($0) }).joined(separator: "")
 
+    }
+
+    func random(begin: UInt32, end: UInt32) -> Int {
+        return Int(arc4random_uniform(end - begin + 1) + begin)
+    }
+
+    public func generate() -> String {
+        let creditCardType = CreditCardType(rawValue: random(begin: 0, end: 1)) ?? .visa
+        return generateCreditCardNumber(for: creditCardType)
     }
 
 }
