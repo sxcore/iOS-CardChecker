@@ -4,7 +4,7 @@ extension MainViewController: CreditCardNumberDelegate {
 
     internal func validationButtonClicked(string: String) {
         if !string.isEmpty {
-            let chainedString = String.removeSeparator(string)
+            let chainedString = string.replacingOccurrences(of: " ", with: "")
 
             guard let stringAsInt = Int(chainedString) else {
                 fatalError("Casting string as integer failed")
