@@ -7,7 +7,7 @@ protocol CardDetailsServiceProtocol {
                           error errorBlock: @escaping (Error) -> Void)
 }
 
-class CardDetailsService: CardDetailsServiceProtocol {
+public class CardDetailsService: CardDetailsServiceProtocol {
 
     init(APIKeyProvider: APIKeyProviding,
          URLProvider: URLProviding) {
@@ -25,7 +25,7 @@ class CardDetailsService: CardDetailsServiceProtocol {
 
         let decoder = JSONDecoder()
 
-        download(from: URL, block: { data in
+        fetchData(from: URL, block: { data in
                 if let creditCardDetails = try? decoder.decode(CardDetails.self, from: data) {
                     block(creditCardDetails)
                 } else if let errorModel = try? decoder.decode(ErrorModel.self, from: data) {
