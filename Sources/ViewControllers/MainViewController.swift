@@ -52,13 +52,8 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
         }
 
             fetchCardDetails(number: stringAsInt)
-
         } else {
-            let alert = UIAlertController(title: "No Input!",
-                                          message: "Input Cannot be empty",
-                                          preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            presentAlertView()
         }
     }
 
@@ -73,6 +68,14 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
     private func configureKeyboardAvoiding() {
         KeyboardAvoiding.avoidingView = mainView.stackView
         KeyboardAvoiding.paddingForCurrentAvoidingView = 10.0
+    }
+
+    private func presentAlertView() {
+        let alert = UIAlertController(title: "No Input!",
+                                      message: "Input Cannot be empty",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
     // MARK: - View Configuration
