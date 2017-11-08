@@ -156,11 +156,9 @@
 		5003CB3D1FAAC38900D07085 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				50DB21881FB2B0ED00F5FDA1 /* BackgroundView */,
+				50DB21871FB2B0E600F5FDA1 /* MainView */,
 				50EA7C0B1FAC05D300640B34 /* Subviews */,
-				50B5A7A11FAC2FB200013434 /* BackgroundView.swift */,
-				50DB21851FB2AD2700F5FDA1 /* MainView+Autolayout.swift */,
-				50EA7C051FABBAA800640B34 /* MainView+Factory.swift */,
-				5003CB3B1FAAC2AB00D07085 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +298,24 @@
 				50E4AC361FAB825F00D4B90D /* CreditCardControlView.swift */,
 			);
 			path = CreditCardControl;
+			sourceTree = "<group>";
+		};
+		50DB21871FB2B0E600F5FDA1 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				50DB21851FB2AD2700F5FDA1 /* MainView+Autolayout.swift */,
+				50EA7C051FABBAA800640B34 /* MainView+Factory.swift */,
+				5003CB3B1FAAC2AB00D07085 /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		50DB21881FB2B0ED00F5FDA1 /* BackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				50B5A7A11FAC2FB200013434 /* BackgroundView.swift */,
+			);
+			path = BackgroundView;
 			sourceTree = "<group>";
 		};
 		50EA7C0B1FAC05D300640B34 /* Subviews */ = {
