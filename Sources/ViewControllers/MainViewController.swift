@@ -1,15 +1,7 @@
 import IHKeyboardAvoiding
-import PromiseKit
 import UIKit
 
 class MainViewController: UIViewController, CreditCardNumberDelegate {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        configureKeyboardAvoiding()
-        resetToPendingAnimation()
-    }
 
     // MARK: - Initializer
 
@@ -25,11 +17,16 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
         view = MainView()
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        configureKeyboardAvoiding()
+        resetToPendingAnimation()
+    }
+
     func fetchCardDetails(number: Int) {
             resetToPendingAnimation()
-        firstly { cardDetailsService.fetchCardDetails(withNumber: number)
-        }.then { cardDetails -> Void in
-
+        cardDetailsService.fetchCardDetails(creditCard: number, block: { cardDetails in
             if cardDetails.valid == "true" {
                 self.validAnimation()
             }
@@ -37,10 +34,24 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
             if cardDetails.valid == "false" {
                 self.invalidAnimation()
             }
-        }
+        }, error: { error in
+            DispatchQueue.main.async {
+                self.invalidAnimation()
+                self.mainView.validationNegativeView.messageLabel.text = error.localizedDescription
+            }
+        })
+
     }
 
-     var mainView: MainView { return forceCast(view) }
+    // MARK: - Delegates
+
+    func validationButtonClicked(string: String) {
+        guard let stringAsInt = Int(string) else {
+            fatalError("Casting string as integer failed")
+        }
+
+        fetchCardDetails(number: stringAsInt)
+    }
 
     // MARK: - ControllerProviding
 
@@ -55,15 +66,9 @@ class MainViewController: UIViewController, CreditCardNumberDelegate {
         KeyboardAvoiding.paddingForCurrentAvoidingView = 10.0
     }
 
-    // MARK: - Delegates
+    // MARK: - View Configuration
 
-    func validationButtonClicked(string: String) {
-        guard let stringAsInt = Int(string) else {
-            fatalError("Casting string as integer failed")
-        }
-
-        fetchCardDetails(number: stringAsInt)
-    }
+    var mainView: MainView { return forceCast(view) }
 
     // MARK: - Required initializer
 

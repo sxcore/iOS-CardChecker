@@ -1,8 +1,10 @@
 import Foundation
-import PromiseKit
+import UIKit
 
 protocol CardDetailsServiceProtocol {
-    func fetchCardDetails(withNumber number: Int) -> Promise<CardDetails>
+    func fetchCardDetails(creditCard: Int,
+                          block: @escaping (CardDetails) -> Void,
+                          error errorBlock: @escaping (Error) -> Void)
 }
 
 class CardDetailsService: CardDetailsServiceProtocol {
@@ -13,40 +15,31 @@ class CardDetailsService: CardDetailsServiceProtocol {
         self.URLProvider = URLProvider
     }
 
-    func fetchCardDetails(withNumber number: Int) -> Promise<CardDetails> {
-        guard let URL = URL(string: "\(URLProvider.url)/\(APIKeyProvider.apiKey)/\(number)/") else {
+    func fetchCardDetails(creditCard: Int,
+                          block: @escaping (CardDetails) -> Void,
+                          error errorBlock: @escaping (Error) -> Void) {
+
+        guard let URL = URL(string: "\(URLProvider.url)/\(APIKeyProvider.apiKey)/\(creditCard)/") else {
             fatalError("Could not reformat string to URL!")
         }
-        var request = URLRequest(url: URL)
-        request.httpMethod = "GET"
 
         let decoder = JSONDecoder()
-        let session = URLSession.shared
 
-        return Promise { fullfill, reject in
-
-            let dataTask = session.dataTask(with: request) { data, response, error in
-                if let data = data,
-                   let json = (try? decoder.decode(CardDetails.self, from: data)) {
-                    fullfill(json)
-                } else if let error = error {
-                    reject(error)
-                } else if let response = response {
-                    print(response)
-                } else if data != nil {
-                    let data = NSError()
-                    reject(data)
-                } else {
-                    reject(PMKError.invalidCallingConvention)
+        download(from: URL, block: { data in
+                if let creditCardDetails = try? decoder.decode(CardDetails.self, from: data) {
+                    block(creditCardDetails)
+                } else if let errorModel = try? decoder.decode(ErrorModel.self, from: data) {
+                    let userInfo: [String: Any] = [NSLocalizedDescriptionKey: errorModel.message]
+                    let error = NSError(domain: "", code: Int(errorModel.error) ?? -1, userInfo: userInfo)
+                    errorBlock(error)
                 }
-            }
-            dataTask.resume()
-        }
+        }, error: { error in
+            errorBlock(error)
+        })
     }
 
     // MARK: - Privates
 
     private let APIKeyProvider: APIKeyProviding
     private let URLProvider: URLProviding
-
 }
