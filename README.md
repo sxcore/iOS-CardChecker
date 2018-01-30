@@ -7,8 +7,6 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/79897f63caeb144f64bbb7e12a21de97309d216a5e1793db7471c81f3466e6d7.svg?columns=all)](https://waffle.io/Drwalcore/NGuru-iOS-CardChecker)
 
 
-Test Assigment for Recruitment Process
-
 * [Icon Source] - Thanks Wikipedia Commons - this icon is not used for commercial use!
 
    [Icon Source]: <https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Circle-icons-creditcard.svg/2000px-Circle-icons-creditcard.svg.png>
