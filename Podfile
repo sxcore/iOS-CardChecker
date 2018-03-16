@@ -20,7 +20,7 @@ end
 def ui_pods
   pod 'HexColors', '~> 5.0'
   pod 'IHKeyboardAvoiding', '~> 4.1'
-  pod 'Pastel', '~> 0.3'
+  pod 'Pastel', '~> 0.4'
   pod 'Reveal-SDK', :configurations => ['Debug']
   pod 'SnapKit', '~> 4.0.0'
 end

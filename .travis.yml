@@ -4,7 +4,8 @@ rvm:
 - 2.4.1
 podfile: Podfile
 before_install:
-- openssl aes-256-cbc -K $encrypted_894f337f9001_key -iv $encrypted_894f337f9001_iv -in APIKey.plist.enc -out Resources/APIKey.plist -d
+- openssl aes-256-cbc -K $encrypted_f53fc276abe9_key -iv $encrypted_f53fc276abe9_iv
+  -in APIKey.plist.enc -out Resources/APIKey.plist -d
 - bundle install
 - pod repo update
 - pod install
