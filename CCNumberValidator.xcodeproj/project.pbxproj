@@ -521,7 +521,6 @@
 				505F5EC71FAA29810093380D /* Frameworks */,
 				505F5EC81FAA29810093380D /* Resources */,
 				6E75607924BC737AD76CB394 /* [CP] Embed Pods Frameworks */,
-				2752FDD7F79B8D946C7039BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -541,7 +540,6 @@
 				505F5EDB1FAA29810093380D /* Frameworks */,
 				505F5EDC1FAA29810093380D /* Resources */,
 				7330F52A134CB7173ED55FA5 /* [CP] Embed Pods Frameworks */,
-				3BF6FA9981E726B17C672982 /* [CP] Copy Pods Resources */,
 				5003CB2E1FAA930900D07085 /* [SwiftLint] for Tests */,
 			);
 			buildRules = (
@@ -617,36 +615,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2752FDD7F79B8D946C7039BB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BF6FA9981E726B17C672982 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidatorTests/Pods-CCNumberValidatorTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5003CB2E1FAA930900D07085 /* [SwiftLint] for Tests */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

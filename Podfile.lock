@@ -46,6 +46,22 @@ DEPENDENCIES:
   - Swinject (~> 2.1.1)
   - SwinjectAutoregistration (~> 2.1.1)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+    - HexColors
+    - IHKeyboardAvoiding
+    - Nimble
+    - Nimble-Snapshots
+    - Pastel
+    - PromiseKit
+    - Quick
+    - Reveal-SDK
+    - SnapKit
+    - SwiftLint
+    - Swinject
+    - SwinjectAutoregistration
+
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   HexColors: d642e696de77aa919584012e80bf62a4b099cee1
@@ -63,4 +79,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b1bd43f9e867b86b55c87458770fa8c56759b5b7
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
