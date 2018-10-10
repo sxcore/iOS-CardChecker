@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50023D41216EAF2200754EC8 /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50023D40216EAF2200754EC8 /* UIColor_Hex.swift */; };
+		50023D43216EAF5B00754EC8 /* UIColor_ Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50023D42216EAF5B00754EC8 /* UIColor_ Color.swift */; };
 		5003CB311FAAB34100D07085 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5003CB301FAAB34000D07085 /* APIKey.plist */; };
 		5003CB361FAABEA000D07085 /* Assembler+Assemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */; };
 		5003CB381FAABF0400D07085 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003CB371FAABF0400D07085 /* MainAssembly.swift */; };
@@ -75,6 +77,8 @@
 		196728729996C134754603A8 /* Pods-CCNumberValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator.release.xcconfig"; sourceTree = "<group>"; };
 		295ABC66CFF27B7E3F0C5063 /* Pods_CCNumberValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNumberValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		480E1B11812DCCE5E1B0CA93 /* Pods-CCNumberValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNumberValidator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator.debug.xcconfig"; sourceTree = "<group>"; };
+		50023D40216EAF2200754EC8 /* UIColor_Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Hex.swift; sourceTree = "<group>"; };
+		50023D42216EAF5B00754EC8 /* UIColor_ Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor_ Color.swift"; sourceTree = "<group>"; };
 		5003CB301FAAB34000D07085 /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		5003CB351FAABEA000D07085 /* Assembler+Assemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembler+Assemblies.swift"; sourceTree = "<group>"; };
 		5003CB371FAABF0400D07085 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
@@ -154,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50023D3F216EAEFB00754EC8 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				50023D40216EAF2200754EC8 /* UIColor_Hex.swift */,
+				50023D42216EAF5B00754EC8 /* UIColor_ Color.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		5003CB2D1FAA875C00D07085 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +263,7 @@
 		50474DD71FAB61A500906551 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				50023D3F216EAEFB00754EC8 /* UIColor */,
 				50DB219A1FB3012900F5FDA1 /* CreditCardControlView */,
 				50DB219B1FB3014100F5FDA1 /* MainView */,
 				50DB218D1FB2C17400F5FDA1 /* MainViewController */,
@@ -559,16 +573,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "M-Code";
 				TargetAttributes = {
 					505F5EC91FAA29810093380D = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					505F5EDD1FAA29810093380D = {
 						CreatedOnToolsVersion = 9.1;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 505F5EC91FAA29810093380D;
 					};
@@ -650,7 +665,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CCNumberValidator/Pods-CCNumberValidator-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
 				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
 				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
@@ -661,7 +675,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
@@ -747,6 +760,7 @@
 				50B5A7AD1FAC418D00013434 /* ValidationIndicatorView+Factory.swift in Sources */,
 				505DCF681FAF4AB60028D880 /* APIKeyProvider.swift in Sources */,
 				5029049B1FAE0C26000E7DFE /* URLProvider.swift in Sources */,
+				50023D41216EAF2200754EC8 /* UIColor_Hex.swift in Sources */,
 				50DB21931FB2EDBB00F5FDA1 /* DateTextField.swift in Sources */,
 				50DB21801FB0401C00F5FDA1 /* MainViewController+Validations.swift in Sources */,
 				505DCF6A1FAF4D960028D880 /* ProvidersAssemply.swift in Sources */,
@@ -756,6 +770,7 @@
 				50DB21841FB293A600F5FDA1 /* CardDetailsService+Download.swift in Sources */,
 				50DB21971FB2F68D00F5FDA1 /* String+InsertSeparator.swift in Sources */,
 				50DB217E1FB0251700F5FDA1 /* ErrorModel.swift in Sources */,
+				50023D43216EAF5B00754EC8 /* UIColor_ Color.swift in Sources */,
 				50DB21861FB2AD2700F5FDA1 /* MainView+Autolayout.swift in Sources */,
 				50EA7C0A1FABC87A00640B34 /* ValidationIndicatorView.swift in Sources */,
 				50DB218A1FB2BEDA00F5FDA1 /* MainViewController+Delegates.swift in Sources */,
@@ -835,6 +850,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -842,6 +858,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -893,6 +910,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -900,6 +918,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -943,7 +962,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.M-Code.CCNumberValidator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -961,7 +980,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.M-Code.CCNumberValidator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -980,7 +999,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.M-Code.CCNumberValidatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCNumberValidator.app/CCNumberValidator";
 			};
@@ -999,7 +1018,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.M-Code.CCNumberValidatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCNumberValidator.app/CCNumberValidator";
 			};
