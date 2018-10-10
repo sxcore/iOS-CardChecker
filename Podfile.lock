@@ -4,9 +4,8 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HexColors (5.0.1)
   - IHKeyboardAvoiding (4.1)
-  - Nimble (7.0.2)
+  - Nimble (7.3.1)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
   - Nimble-Snapshots/Core (6.3.0):
@@ -24,32 +23,30 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (4.5.0):
     - PromiseKit/CorePromise
-  - Quick (1.2.0)
+  - Quick (1.3.2)
   - Reveal-SDK (11)
   - SnapKit (4.0.0)
-  - SwiftLint (0.23.1)
+  - SwiftLint (0.27.0)
   - Swinject (2.1.1)
   - SwinjectAutoregistration (2.1.1):
     - Swinject (~> 2.1)
 
 DEPENDENCIES:
-  - HexColors (~> 5.0)
   - IHKeyboardAvoiding (~> 4.1)
-  - Nimble (~> 7.0)
+  - Nimble (~> 7.3.1)
   - Nimble-Snapshots (~> 6.3.0)
   - Pastel (~> 0.4)
   - PromiseKit (~> 4.5.0)
-  - Quick (~> 1.2)
+  - Quick (~> 1.3.2)
   - Reveal-SDK
   - SnapKit (~> 4.0.0)
-  - SwiftLint (~> 0.22)
+  - SwiftLint (~> 0.27)
   - Swinject (~> 2.1.1)
   - SwinjectAutoregistration (~> 2.1.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FBSnapshotTestCase
-    - HexColors
     - IHKeyboardAvoiding
     - Nimble
     - Nimble-Snapshots
@@ -64,19 +61,18 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HexColors: d642e696de77aa919584012e80bf62a4b099cee1
   IHKeyboardAvoiding: 5f42b8ff1f64144ea425b1954e4311eb6bf9077a
-  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Pastel: 7fa5e26123b3dbe11f7ed255654bf37100b199a5
   PromiseKit: 9c1d9f6d7b65e3951a90bea7f407c56972be5d8e
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   Reveal-SDK: 7fa13d04bb55db61ff2342a990cf731d5159361d
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  SwiftLint: 1b670ce79284c76520f84060e87d645078fd32fa
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   Swinject: afea49fd95f392b41171669f165842879c48fad6
   SwinjectAutoregistration: d06b56bd8f912b9fb9c59c15181342558a734b1b
 
-PODFILE CHECKSUM: b1bd43f9e867b86b55c87458770fa8c56759b5b7
+PODFILE CHECKSUM: 1d54dc91af39d1e23211879e4ec3669572bd99cc
 
 COCOAPODS: 1.5.3
