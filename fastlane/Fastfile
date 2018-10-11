@@ -1,0 +1,28 @@
+setup_travis
+update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+	desc "Run Tests On All Device Sizes - Best to Run Locally"
+	lane :test_all do
+		run_tests(workspace: "CCNumberValidator.xcworkspace",
+			scheme: "CCNumberValidator",
+			code_coverage: true,
+			output_style: "rspec",
+			xcargs: "ONLY_ACTIVE_ARCH=YES",
+			devices: ["iPhone SE", "iPhone 8", "iPhone 8 Plus", "iPhone XR", "iPhone XS", "iPhone XS Max"]
+			)
+	end
+
+	desc "Run Tests On Smallest and Biggest Supported Devices"
+	lane :test_two do
+		run_tests(workspace: "CCNumberValidator.xcworkspace",
+			scheme: "CCNumberValidator",
+			code_coverage: true,
+			output_style: "rspec",
+			xcargs: "ONLY_ACTIVE_ARCH=YES",
+			devices: ["iPhone SE", "iPhone XS Max"]
+			)
+	end
+end
