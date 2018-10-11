@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 inhibit_all_warnings!
 
 def di_pods
@@ -12,7 +12,7 @@ def helper_pods
 end
 
 def test_pods
-  pod 'Nimble-Snapshots', '~> 6.3.0'
+  pod 'Nimble-Snapshots', :git => 'git@github.com:Vkt0r/Nimble-Snapshots.git', :branch => 'second_curtain_fix'
   pod 'Nimble', '~> 7.3.1'
   pod 'Quick', '~> 1.3.2'
 end
@@ -39,7 +39,7 @@ end
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         case target.name
-            when 'IHKeyboardAvoiding', 'PromiseKit', 'SnapKit', 'Pastel', 'Nimble-Shapshots'
+            when 'IHKeyboardAvoiding', 'PromiseKit', 'SnapKit', 'Pastel'
             swift_version = '4.0'
             else
             swift_version = '4.2'
