@@ -39,7 +39,7 @@ end
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         case target.name
-            when 'IHKeyboardAvoiding', 'PromiseKit', 'SnapKit', 'Pastel'
+            when 'IHKeyboardAvoiding', 'PromiseKit', 'SnapKit', 'Pastel', 'Nimble-Shapshots'
             swift_version = '4.0'
             else
             swift_version = '4.2'
