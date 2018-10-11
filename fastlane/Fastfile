@@ -4,7 +4,7 @@ update_fastlane
 default_platform(:ios)
 
 platform :ios do
-	desc "Run Tests On All Device Sizes - Best to Run Locally"
+	desc "Run Tests On All Device Sizes - Best to Run Locally, do not run on CI!"
 	lane :test_all do
 		run_tests(workspace: "CCNumberValidator.xcworkspace",
 			scheme: "CCNumberValidator",
@@ -22,6 +22,7 @@ platform :ios do
 			code_coverage: true,
 			output_style: "rspec",
 			xcargs: "ONLY_ACTIVE_ARCH=YES",
+			disable_concurrent_testing: true,
 			devices: ["iPhone SE", "iPhone XS Max"]
 			)
 	end

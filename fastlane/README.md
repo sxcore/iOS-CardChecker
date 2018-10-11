@@ -20,7 +20,7 @@ or alternatively using `brew cask install fastlane`
 ```
 fastlane ios test_all
 ```
-Run Tests On All Device Sizes - Best to Run Locally
+Run Tests On All Device Sizes - Best to Run Locally, do not run on CI!
 ### ios test_two
 ```
 fastlane ios test_two
