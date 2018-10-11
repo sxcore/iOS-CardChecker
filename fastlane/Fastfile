@@ -4,9 +4,10 @@ update_fastlane
 default_platform(:ios)
 
 platform :ios do
-	desc "Run Tests On All Device Sizes - Best to Run Locally, do not run on CI!"
+	desc "Run tests on all device sizes - best to run locally, just to make Snapshots for all devices, do not run on CI :)"
 	lane :test_all do
 		run_tests(workspace: "CCNumberValidator.xcworkspace",
+			clean: true,
 			scheme: "CCNumberValidator",
 			code_coverage: true,
 			output_style: "rspec",
@@ -15,9 +16,10 @@ platform :ios do
 			)
 	end
 
-	desc "Run Tests On Smallest and Biggest Supported Devices"
+	desc "Run tests on smallest and biggest supported Devices"
 	lane :test_two do
 		run_tests(workspace: "CCNumberValidator.xcworkspace",
+			clean: true,
 			scheme: "CCNumberValidator",
 			code_coverage: true,
 			output_style: "rspec",
