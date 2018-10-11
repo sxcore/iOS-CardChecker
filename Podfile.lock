@@ -34,7 +34,7 @@ PODS:
 DEPENDENCIES:
   - IHKeyboardAvoiding (~> 4.1)
   - Nimble (~> 7.3.1)
-  - Nimble-Snapshots (from `https://github.com/Vkt0r/Nimble-Snapshots.git`, branch `second_curtain_fix`)
+  - Nimble-Snapshots (from `https://github.com/ashfurrow/Nimble-Snapshots.git`, branch `master`)
   - Pastel (~> 0.4)
   - PromiseKit (~> 4.5.0)
   - Quick (~> 1.3.2)
@@ -60,13 +60,13 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Nimble-Snapshots:
-    :branch: second_curtain_fix
-    :git: https://github.com/Vkt0r/Nimble-Snapshots.git
+    :branch: master
+    :git: https://github.com/ashfurrow/Nimble-Snapshots.git
 
 CHECKOUT OPTIONS:
   Nimble-Snapshots:
-    :commit: 396b640ea8290a2ddb45824b2c93b4d59743bae2
-    :git: https://github.com/Vkt0r/Nimble-Snapshots.git
+    :commit: cf20ab5c0ccc4acef05baad8ad3a4bd99ef4e4ed
+    :git: https://github.com/ashfurrow/Nimble-Snapshots.git
 
 SPEC CHECKSUMS:
   IHKeyboardAvoiding: 5f42b8ff1f64144ea425b1954e4311eb6bf9077a
@@ -82,6 +82,6 @@ SPEC CHECKSUMS:
   Swinject: afea49fd95f392b41171669f165842879c48fad6
   SwinjectAutoregistration: d06b56bd8f912b9fb9c59c15181342558a734b1b
 
-PODFILE CHECKSUM: 30d736ed824fe4eacfdb8d49287978ec57592f96
+PODFILE CHECKSUM: 78d4c4578084723f236c15fa0050616e8436ea9c
 
 COCOAPODS: 1.5.3

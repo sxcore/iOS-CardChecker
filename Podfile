@@ -12,7 +12,7 @@ def helper_pods
 end
 
 def test_pods
-  pod 'Nimble-Snapshots', :git => 'https://github.com/Vkt0r/Nimble-Snapshots.git', :branch => 'second_curtain_fix'
+  pod 'Nimble-Snapshots', :git => 'https://github.com/ashfurrow/Nimble-Snapshots.git', :branch => 'master'
   pod 'Nimble', '~> 7.3.1'
   pod 'Quick', '~> 1.3.2'
 end
