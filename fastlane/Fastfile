@@ -16,8 +16,10 @@ platform :ios do
 			)
 	end
 
+	#Idea -> make tests randomized. Take random device from given array.
+
 	desc "Run tests on smallest and biggest supported Devices"
-	lane :test_two do
+	lane :test do
 		run_tests(workspace: "CCNumberValidator.xcworkspace",
 			clean: true,
 			scheme: "CCNumberValidator",
@@ -25,7 +27,7 @@ platform :ios do
 			output_style: "rspec",
 			xcargs: "ONLY_ACTIVE_ARCH=YES",
 			disable_concurrent_testing: true,
-			devices: ["iPhone SE", "iPhone XS Max"]
+			devices: ["iPhone SE"]
 			)
 	end
 end

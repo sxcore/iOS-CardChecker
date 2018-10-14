@@ -21,9 +21,9 @@ or alternatively using `brew cask install fastlane`
 fastlane ios test_all
 ```
 Run tests on all device sizes - best to run locally, just to make Snapshots for all devices, do not run on CI :)
-### ios test_two
+### ios test
 ```
-fastlane ios test_two
+fastlane ios test
 ```
 Run tests on smallest and biggest supported Devices
 
