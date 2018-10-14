@@ -1,0 +1,33 @@
+setup_travis
+update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+	desc "Run tests on all device sizes - best to run locally, just to make Snapshots for all devices, do not run on CI :)"
+	lane :test_all do
+		run_tests(workspace: "CCNumberValidator.xcworkspace",
+			clean: true,
+			scheme: "CCNumberValidator",
+			code_coverage: true,
+			output_style: "rspec",
+			xcargs: "ONLY_ACTIVE_ARCH=YES",
+			devices: ["iPhone SE", "iPhone 8", "iPhone 8 Plus", "iPhone XR", "iPhone XS", "iPhone XS Max"]
+			)
+	end
+
+	#Idea -> make tests randomized. Take random device from given array.
+
+	desc "Run tests on smallest and biggest supported Devices"
+	lane :test do
+		run_tests(workspace: "CCNumberValidator.xcworkspace",
+			clean: true,
+			scheme: "CCNumberValidator",
+			code_coverage: true,
+			output_style: "rspec",
+			xcargs: "ONLY_ACTIVE_ARCH=YES",
+			disable_concurrent_testing: true,
+			devices: ["iPhone SE"]
+			)
+	end
+end

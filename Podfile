@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 inhibit_all_warnings!
 
 def di_pods
@@ -8,17 +8,16 @@ end
 
 def helper_pods
   pod 'PromiseKit', '~> 4.5.0'
-  pod 'SwiftLint', '~> 0.22'
+  pod 'SwiftLint', '~> 0.27'
 end
 
 def test_pods
-  pod 'Nimble-Snapshots', '~> 6.3.0'
-  pod 'Nimble', '~> 7.0'
-  pod 'Quick', '~> 1.2'
+  pod 'Nimble-Snapshots', :git => 'https://github.com/ashfurrow/Nimble-Snapshots.git', :branch => 'master'
+  pod 'Nimble', '~> 7.3.1'
+  pod 'Quick', '~> 1.3.2'
 end
 
 def ui_pods
-  pod 'HexColors', '~> 5.0'
   pod 'IHKeyboardAvoiding', '~> 4.1'
   pod 'Pastel', '~> 0.4'
   pod 'Reveal-SDK', :configurations => ['Debug']
@@ -40,14 +39,13 @@ end
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         case target.name
-            when 'HexColors'
-            swift_version = '3.0'
-            else
+            when 'IHKeyboardAvoiding', 'PromiseKit', 'SnapKit', 'Pastel'
             swift_version = '4.0'
+            else
+            swift_version = '4.2'
         end
         target.build_configurations.each do |config|
             config.build_settings['SWIFT_VERSION'] = swift_version
         end
     end
 end
-

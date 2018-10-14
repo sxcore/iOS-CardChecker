@@ -1,4 +1,4 @@
-osx_image: xcode9.1
+osx_image: xcode10
 language: objective-c
 rvm:
 - 2.4.1
@@ -10,9 +10,7 @@ before_install:
 - pod repo update
 - pod install
 script:
-- set -o pipefail && xcodebuild test -workspace CCNumberValidator.xcworkspace -scheme
-  CCNumberValidator -sdk iphonesimulator11.1 -destination 'name=iPhone SE,OS=11.1'
-  -enableCodeCoverage YES ONLY_ACTIVE_ARCH=YES | xcpretty
+- bundle exec fastlane test
 - bundle exec danger
 after_success:
 - bash <(curl -s https://codecov.io/bash) -J 'CCNumberValidator'

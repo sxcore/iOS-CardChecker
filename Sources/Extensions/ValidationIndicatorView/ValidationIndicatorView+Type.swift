@@ -1,4 +1,3 @@
-import HexColors
 import UIKit
 
 extension ValidationIndicatorViewType {
@@ -30,22 +29,11 @@ extension ValidationIndicatorViewType {
     var backgroundColor: UIColor {
         switch self {
         case .negative:
-            guard let redColor = UIColor("#f90707", alpha: 1.0) else {
-                fatalError("Could not Fetch Red Color")
-            }
-            return redColor
-
+            return UIColor(color: ColorHex.redF90707)
         case .neutral:
-            guard let orangeColor = UIColor("#FD8B06", alpha: 1.0) else {
-                fatalError("Could not Fetch Orange Color")
-            }
-            return orangeColor
-
+            return UIColor(color: ColorHex.orangeFDB06)
         case .positive:
-            guard let greenColor = UIColor("#5DC869", alpha: 1.0) else {
-                fatalError("Could not Fetch Green Color")
-            }
-            return greenColor
+            return UIColor(color: ColorHex.green5DC869)
         }
     }
 
