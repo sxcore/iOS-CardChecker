@@ -1,5 +1,7 @@
 setup_travis
-update_fastlane
+if !is_ci
+  update_fastlane
+end
 
 default_platform(:ios)
 
